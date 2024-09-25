@@ -1,0 +1,93 @@
+version: "3.1"
+
+intents:
+  # - greet
+  # - goodbye
+  # - affirm
+  # - deny
+  # - mood_great
+  # - mood_unhappy
+  # - bot_challenge
+  - OTP
+  - Thông tin thị trường chứng khoán
+  - Thông tin chính sách
+  - Thông tin làm việc
+  - Thông tin tài khoản
+  - Xác nhận mua cổ phiếu
+  - Đặt lệnh mua cổ phiếu trong phiên
+  # - Bán cổ phiếu
+  # - Mua cổ phiếu
+  # - Huỷ mua cổ phiếu
+  # - Hỏi thông tin người chăm sóc
+  # - Chào
+  # - Cảm xúc
+  # - Không phân loại
+  # - Huỷ bán cổ phiếu
+  - Inform_stock
+
+entities:
+  - amount
+  - stock_symbol
+  - time
+
+# slots:
+#   amount:
+#     type: float
+#     influence_conversation: false
+#   stock_symbol:
+#     type: text
+#     influence_conversation: false
+#   time:
+#     type: text
+#     influence_conversation: false
+    
+# forms:
+#   inquire_stock_arrival_form:
+#     required_slots:
+#       - amount
+#       - stock_symbol
+#       - time
+
+responses:
+  # utter_greet:
+  # - text: "Hey! How are you?"
+
+  # utter_cheer_up:
+  # - text: "Here is something to cheer you up:"
+  #   image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  # utter_did_that_help:
+  # - text: "Did that help you?"
+
+  # utter_happy:
+  # - text: "Great, carry on!"
+
+  # utter_goodbye:
+  # - text: "Bye"
+
+  # utter_iamabot:
+  # - text: "I am a bot, powered by Rasa."
+
+  utter_OTP:
+    - text: "Mã OTP của bạn sẽ được gửi ngay bây giờ."
+    
+
+actions:
+  # - utter_greet
+  # - utter_cheer_up
+  # - utter_did_that_help
+  # - utter_happy
+  # - utter_goodbye
+  # - utter_iamabot
+  # - utter_OTP
+  - action_extract_stock_entity
+  - action_find_stock_news
+  - action_find_stock_details
+  - action_find_policy_info
+  - action_find_work_info
+  - action_account_info
+  - action_confirm_order
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

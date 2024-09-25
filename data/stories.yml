@@ -1,0 +1,70 @@
+version: "3.1"
+
+stories:
+
+# - story: happy path
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_great
+#   - action: utter_happy
+
+# - story: sad path 1
+#   steps:
+#   - intent: Chào
+#   - action: utter_greet
+#   - intent: Cảm xúc
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+
+# - story: sad path 2
+#   steps:
+#   - intent: Chào
+#   - action: utter_greet
+#   - intent: Cảm xúc
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye
+
+- story: ask for OTP
+  steps:
+    - intent: OTP
+    - action: utter_OTP
+
+- story: ask for stock news
+  steps:
+    - intent: Thông tin thị trường chứng khoán
+    - action: action_find_stock_news
+    - intent: Inform_stock
+    - action: action_find_stock_details
+
+
+- story: buy stock
+  steps: 
+    - intent: Đặt lệnh mua cổ phiếu trong phiên
+    - action: action_extract_stock_entity
+    - intent: Xác nhận mua cổ phiếu
+    - action: action_confirm_order
+
+- story: ask policy info
+  steps: 
+    - intent: Thông tin chính sách
+    - action: action_find_policy_info
+
+- story: ask work info
+  steps: 
+    - intent: Thông tin làm việc
+    - action: action_find_work_info
+
+- story: ask account info
+  steps:
+    - intent: Thông tin tài khoản
+    - action: action_account_info
+
+# - story: confirm place stock order
+#   steps:
+#     - intent: Xác nhận mua cổ phiếu
+#     - action: action_confirm_order

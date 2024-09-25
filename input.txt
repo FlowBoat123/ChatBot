@@ -1,0 +1,49 @@
+ - Tôi yêu cầu hủy lệnh bán cổ phiếu XYZ.
+    - Hủy giao dịch bán cổ phiếu này cho tôi ngay lập tức.
+    - Tôi muốn hủy lệnh bán cổ phiếu, hãy xử lý ngay.
+    - Hủy lệnh bán cổ phiếu này ngay bây giờ.
+    - Tôi yêu cầu lệnh bán cổ phiếu này được hủy.
+    - Vui lòng hủy lệnh bán cổ phiếu của tôi.
+    - Hủy ngay giao dịch bán cổ phiếu XYZ.
+    - Tôi quyết định hủy lệnh bán cổ phiếu này.
+    - Lệnh bán cổ phiếu cần phải được hủy ngay.
+    - Tôi cần hủy lệnh bán cổ phiếu này ngay lập tức.
+    - Hủy lệnh bán cổ phiếu này.
+    - Hủy giao dịch bán cổ phiếu ngay.
+    - Hủy ngay lệnh bán cổ phiếu.
+    - Yêu cầu hủy lệnh bán.
+    - Hủy lệnh bán này ngay lập tức.
+    - Hủy lệnh bán cổ phiếu XYZ.
+    - Hủy giao dịch bán ngay bây giờ.
+    - Hủy lệnh bán ngay lập tức.
+
+     - Tôi yêu cầu hủy lệnh mua cổ phiếu XYZ.
+    - Hủy giao dịch mua cổ phiếu này cho tôi ngay lập tức.
+    - Tôi muốn hủy lệnh mua cổ phiếu, hãy xử lý ngay.
+    - Hủy lệnh mua cổ phiếu này ngay bây giờ.
+    - Tôi yêu cầu lệnh mua cổ phiếu này được hủy.
+    - Vui lòng hủy lệnh mua cổ phiếu của tôi.
+    - Hủy ngay giao dịch mua cổ phiếu XYZ.
+    - Tôi quyết định hủy lệnh mua cổ phiếu này.
+    - Lệnh mua cổ phiếu cần phải được hủy ngay.
+    - Tôi cần hủy lệnh mua cổ phiếu này ngay lập tức.
+    - Hủy lệnh mua cổ phiếu này.
+    - Hủy giao dịch mua cổ phiếu ngay.
+    - Hủy ngay lệnh mua cổ phiếu.
+    - Yêu cầu hủy lệnh mua.
+    - Hủy lệnh mua này ngay lập tức.
+    - Hủy lệnh mua cổ phiếu XYZ.
+    - Hủy giao dịch mua ngay bây giờ.
+    - Hủy lệnh mua ngay lập tức.
+    - Lệnh mua này phải được hủy.
+    - Hủy giao dịch mua ngay.
+    - Hủy lệnh.
+    - Hủy ngay.
+    - Hủy mua.
+    - Hủy.
+    - Hủy giao dịch.
+    - Hủy lệnh mua.
+    - Hủy lập tức.
+    - Hủy cổ phiếu.
+    - Hủy nhanh.
+    - Hủy ngay lập tức.
