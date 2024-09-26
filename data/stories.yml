@@ -64,6 +64,16 @@ stories:
     - intent: Thông tin tài khoản
     - action: action_account_info
 
+- story: hello 
+  steps:
+    - intent: chào
+    - action: action_hello_user
+
+- story: goodbye
+  steps:
+    - intent: tạm biệt
+    - action: action_bye_user
+
 # - story: confirm place stock order
 #   steps:
 #     - intent: Xác nhận mua cổ phiếu

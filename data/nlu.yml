@@ -1,4 +1,4 @@
-version: "3.1"
+0version: "3.1"
 
 nlu:
 # - intent: greet
@@ -566,39 +566,54 @@ nlu:
     - Tôi cần biết tên đăng nhập của mình, bạn có thể kiểm tra không?
     - Tên đăng nhập của tôi trong hệ thống là gì?
 
-# - intent: Chào
-#   examples: |
-#     - Chào chatbot, tôi cần sự giúp đỡ của bạn trong việc tìm kiếm thông tin.
-#     - Xin chào chatbot, tôi hy vọng bạn có thể giúp tôi giải quyết vấn đề này.
-#     - Chào chatbot, tôi muốn biết thông tin về dịch vụ của bạn.
-#     - Xin chào chatbot, tôi muốn bắt đầu cuộc trò chuyện với bạn.
-#     - Chào chatbot, tôi cần hỗ trợ trong việc thực hiện một số giao dịch.
-#     - Chào chatbot, có thông tin gì mới mà bạn có thể cung cấp cho tôi không?
-#     - Xin chào chatbot, tôi đang tìm kiếm một số thông tin cụ thể.
-#     - Chào chatbot, tôi có một câu hỏi về sản phẩm của bạn.
-#     - Xin chào chatbot, tôi cần biết thêm chi tiết về dịch vụ.
-#     - Chào chatbot, tôi đang cần trợ giúp với một vấn đề.
-#     - Chào chatbot!
-#     - Xin chào, chatbot!
-#     - Hi, chatbot!
-#     - Hello, chatbot!
-#     - Chào bạn, chatbot!
-#     - Hi there, chatbot!
-#     - Hello there, chatbot!
-#     - Chào, chatbot!
-#     - Hi!
-#     - Hello!
-#     - Chào!
-#     - Hi!
-#     - Xin chào!
-#     - Hello!
-#     - Hi there!
-#     - Hello there!
-#     - Chào bạn!
-#     - Chào!
-#     - Hi!
-#     - Hello!
+- intent: Chào
+  examples: |
+    - Chào chatbot, tôi cần sự giúp đỡ của bạn trong việc tìm kiếm thông tin.
+    - Xin chào chatbot, tôi hy vọng bạn có thể giúp tôi giải quyết vấn đề này.
+    - Chào chatbot, tôi muốn biết thông tin về dịch vụ của bạn.
+    - Xin chào chatbot, tôi muốn bắt đầu cuộc trò chuyện với bạn.
+    - Chào chatbot, tôi cần hỗ trợ trong việc thực hiện một số giao dịch.
+    - Chào chatbot, có thông tin gì mới mà bạn có thể cung cấp cho tôi không?
+    - Xin chào chatbot, tôi đang tìm kiếm một số thông tin cụ thể.
+    - Chào chatbot, tôi có một câu hỏi về sản phẩm của bạn.
+    - Xin chào chatbot, tôi cần biết thêm chi tiết về dịch vụ.
+    - Chào chatbot, tôi đang cần trợ giúp với một vấn đề.
+    - Chào chatbot!
+    - Xin chào, chatbot!
+    - Hi, chatbot!
+    - Hello, chatbot!
+    - Chào bạn, chatbot!
+    - Hi there, chatbot!
+    - Hello there, chatbot!
+    - Chào, chatbot!
+    - Hi!
+    - Hello!
+    - Chào!
+    - Hi!
+    - Xin chào!
+    - Hello!
+    - Hi there!
+    - Hello there!
+    - Chào bạn!
+    - Chào!
+    - Hi!
+    - Hello!
 
+- intent: Tạm biệt
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - tạm biệt
+    - hẹn gặp lại
+    - chúc bạn 1 ngày tốt lành
 
 # - intent: Cảm xúc
 #   examples: |
