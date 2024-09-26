@@ -2,14 +2,14 @@ version: "3.1"
 
 rules:
 
-# - rule: Say goodbye anytime the user says goodbye
-#   steps:
-#   - intent: goodbye
-#   - action: utter_goodbye
+- rule: Đáp lại mỗi khi người dùng chào
+  steps:
+  - intent: Chào
+  - action: phan_hoi_chao
 
-# - rule: Say 'I am a bot' anytime the user challenges
-#   steps:
-#   - intent: bot_challenge
-#   - action: utter_iamabot
+- rule: Đáp lại mỗi khi người dùng cảm xúc
+  steps:
+  - intent: Cảm xúc
+  - action: phan_hoi_cam_xuc
 
 

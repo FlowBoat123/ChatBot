@@ -112,3 +112,15 @@ class ConfirmPlaceStockOrder(Action):
 
         dispatcher.utter_message(text="Xác nhận thực hiện giao dịch")       
         return []
+
+class Unclassified(Action):
+
+    def name(self) -> Text:
+        return "action_unclassified"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        dispatcher.utter_message(text="")       
+        return []

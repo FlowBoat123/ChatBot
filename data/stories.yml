@@ -64,7 +64,17 @@ stories:
     - intent: Thông tin tài khoản
     - action: action_account_info
 
-# - story: confirm place stock order
-#   steps:
-#     - intent: Xác nhận mua cổ phiếu
-#     - action: action_confirm_order
+- story: hỏi Không phân loại
+  steps:
+    - intent: Không phân loại
+    - action: utter_unclassified
+
+- story: Hỏi thông tin người chăm sóc
+  steps:
+    - intent: Hỏi thông tin người chăm sóc
+    - action: utter_thong_tin_nguoi_cham_soc
+
+- story: Hỏi thông tin người chăm sóc
+  steps:
+    - intent: Hỏi thông tin người chăm sóc
+    - action: utter_thong_tin_nguoi_cham_soc
