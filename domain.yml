@@ -20,6 +20,7 @@ intents:
   # - Huỷ mua cổ phiếu
   # - Hỏi thông tin người chăm sóc
   - Chào
+  - Tạm biệt
   # - Cảm xúc
   # - Không phân loại
   # - Huỷ bán cổ phiếu
@@ -74,16 +75,10 @@ responses:
 
   utter_OTP:
     - text: "Mã OTP của bạn sẽ được gửi ngay bây giờ."
-  
-  utter_unclassified:
-    - text: "..."
     
-  utter_thong_tin_nguoi_cham_soc:
-    - text: "Vui lòng liên hệ ..."
 
-
-actions:
-  # - utter_greet
+# actions:
+#   - utter_greet
   # - utter_cheer_up
   # - utter_did_that_help
   # - utter_happy
@@ -97,7 +92,8 @@ actions:
   - action_find_work_info
   - action_account_info
   - action_confirm_order
-  - action_khong_phan_loai
+  - action_hello_user
+  - action_bye_user
 
 session_config:
   session_expiration_time: 60

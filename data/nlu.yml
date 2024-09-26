@@ -1,4 +1,4 @@
-version: "3.1"
+0version: "3.1"
 
 nlu:
 # - intent: greet
@@ -599,6 +599,21 @@ nlu:
     - Hi!
     - Hello!
 
+- intent: Tạm biệt
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - tạm biệt
+    - hẹn gặp lại
+    - chúc bạn 1 ngày tốt lành
 
 - intent: Cảm xúc
   examples: |
