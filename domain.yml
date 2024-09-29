@@ -1,96 +1,99 @@
-version: "3.1"
-
+version: '3.1'
 intents:
-  # - greet
-  # - goodbye
-  # - affirm
-  # - deny
-  # - mood_great
-  # - mood_unhappy
-  # - bot_challenge
-  - OTP
-  - Thông tin thị trường chứng khoán
-  - Thông tin chính sách
-  - Thông tin làm việc
-  - Thông tin tài khoản
-  - Xác nhận mua cổ phiếu
-  - Đặt lệnh mua cổ phiếu trong phiên
-  # - Bán cổ phiếu
-  # - Mua cổ phiếu
-  # - Huỷ mua cổ phiếu
-  # - Hỏi thông tin người chăm sóc
-  - Chào
-  - Tạm biệt
-  # - Cảm xúc
-  # - Không phân loại
-  # - Huỷ bán cổ phiếu
-  - Inform_stock
+- Chao
+- Inform_stock
+- OTP
+- system_info
+- Thông tin chính sách
+- Thông tin làm việc
+- Thông tin thị trường chứng khoán
+- Thông tin tài khoản
+- Xác nhận mua cổ phiếu
+- goodbye
+- Đặt lệnh mua cổ phiếu trong phiên
+- give_info
 
 entities:
-  - amount
-  - stock_symbol
-  - time
+- amount
+- stock_symbol
+- time 
+- location
+- user_name
+ 
+slots:
+  user_name: # name for user
+    type: text
+    influence_conversation: false 
+    mappings:
+    - type: from_entity
+      entity: user_name
+      conditions:
+      - active_loop: null  # This condition means it can be extracted when no form is active
+  
+  stock_symbol: # stock symbol like CEO, VNM
+    type: text
+    influence_conversation: false 
+    mappings:
+    - type: from_entity
+      entity: stock_symbol
+      condiions:
+      - active_loop: null
 
-# slots:
-#   amount:
-#     type: float
-#     influence_conversation: false
-#   stock_symbol:
-#     type: text
-#     influence_conversation: false
-#   time:
-#     type: text
-#     influence_conversation: false
-    
-# forms:
-#   inquire_stock_arrival_form:
-#     required_slots:
-#       - amount
-#       - stock_symbol
-#       - time
+  amount: # amount of the stock
+    type: float
+    influence_conversation: false 
+    mappings:
+    - type: from_entity
+      entity: amount
+      condiions:
+      - active_loop: null
+  
+  time: # what time is it
+    type: text
+    influence_conversation: false 
+    mappings:
+    - type: from_entity
+      entity: time
+      condiions:
+      - active_loop: null
+  
+  location: # where are u now
+    type: text
+    influence_conversation: false 
+    mappings:
+    - type: from_entity
+      entity: location
+      condiions:
+      - active_loop: null
+
 
 responses:
-  # utter_greet:
-  # - text: "Hey! How are you?"
-
-  # utter_cheer_up:
-  # - text: "Here is something to cheer you up:"
-  #   image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  # utter_did_that_help:
-  # - text: "Did that help you?"
-
-  # utter_happy:
-  # - text: "Great, carry on!"
-
-  # utter_goodbye:
-  # - text: "Bye"
-
-  # utter_iamabot:
-  # - text: "I am a bot, powered by Rasa."
-
+  utter_greet:
+  - text: Xin chào, tôi có thể giúp gì cho bạn!
+  - text: Hân hạnh được làm việc với bạn!
+  - text: Chao xìn!
+  utter_goodbye:
+  - text: Tạm biệt.
+  - text: Hẹn gặp lại.
+  - text: Chúc bạn 1 ngày tốt lành.
   utter_OTP:
-    - text: "Mã OTP của bạn sẽ được gửi ngay bây giờ."
-    
-
-# actions:
-#   - utter_greet
-  # - utter_cheer_up
-  # - utter_did_that_help
-  # - utter_happy
-  # - utter_goodbye
-  # - utter_iamabot
-  # - utter_OTP
-  - action_extract_stock_entity
-  - action_find_stock_news
-  - action_find_stock_details
-  - action_find_policy_info
-  - action_find_work_info
-  - action_account_info
-  - action_confirm_order
-  - action_hello_user
-  - action_bye_user
-
+  - text: Mã OTP của bạn sẽ được gửi ngay bây giờ.
+  utter_help:
+  - text: "Easy 
+    peasy"
+actions:
+- utter_greet
+- utter_goodbye
+- utter_OTP
+- action_confirm_order
+- action_extract_stock_entity
+- action_find_stock_news
+- action_find_stock_details
+- action_find_policy_info
+- action_find_work_info
+- action_account_info
+- action_provide_system_info
+- receive_account_info
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

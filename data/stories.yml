@@ -61,18 +61,20 @@ stories:
 
 - story: ask account info
   steps:
+    - intent: Chao
+    - action: utter_greet
     - intent: Thông tin tài khoản
     - action: action_account_info
+    - intent: give_info
+    - action: receive_account_info
 
-- story: hello 
+- story: normal path
   steps:
-    - intent: chào
-    - action: action_hello_user
+    - intent: Chao
+    - action: utter_greet
+    - intent: goodbye
+    - action: utter_goodbye
 
-- story: goodbye
-  steps:
-    - intent: tạm biệt
-    - action: action_bye_user
 
 # - story: confirm place stock order
 #   steps:

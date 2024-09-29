@@ -9,8 +9,11 @@
 
 from typing import Any, Text, Dict, List
 
+from rasa_sdk.events import SlotSet
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+
+stock_symbol_db = {"CEO", "SSI", "VNM", "VCB", "VIC", "SKD", "TOI"}
 
 class FindStockNews(Action):
 
@@ -76,7 +79,7 @@ class FindPolicyInfo(Action):
         dispatcher.utter_message(text=f"Đây là chính sách bạn cần ... ")       
         return []
 
-class WorkPolicyInfo(Action):
+class WorkPolicyInfo(Action): 
 
     def name(self) -> Text:
         return "action_find_work_info"
@@ -88,7 +91,7 @@ class WorkPolicyInfo(Action):
         dispatcher.utter_message(text=f"Thời gian giao dịch là từ thứ 2 đến thứ 6 bắt đầu từ 9:00 đến 15:00")       
         return []
 
-class AccountInfo(Action):
+class AccountInfo(Action): # thông tin đăng nhập
 
     def name(self) -> Text:
         return "action_account_info"
@@ -97,9 +100,34 @@ class AccountInfo(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        dispatcher.utter_message(text="Tên đăng nhập của bạn là ....")       
-        return []
+        name = tracker.get_slot("user_name")
 
+        if name:
+            dispatcher.utter_message(text = f"Tên đăng nhập của bạn là: {name}")       
+        else:
+            dispatcher.utter_message(text = f"Bạn cần cung cấp nickname của bạn! Điền ngay tại đây...")
+        return []
+# name = tracker.get_slot("name")
+
+class ReceiveNickname(Action):  # Ask for the user's nickname
+
+    def name(self) -> Text:
+        return "receive_account_info"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        name = tracker.get_slot("user_name")
+        if name:
+            dispatcher.utter_message(text=f'Hello {name}, how can I assist you?')
+            return []
+
+        text = tracker.latest_message['text']
+        dispatcher.utter_message(text=f'Hello {text}, nice to meet you!')
+        
+        return [SlotSet("user_name", text)]
+        
 
 class ConfirmPlaceStockOrder(Action):
 
@@ -113,26 +141,14 @@ class ConfirmPlaceStockOrder(Action):
         dispatcher.utter_message(text="Xác nhận thực hiện giao dịch")       
         return []
 
-class SayHelloUser(Action):
+class ProvideSystemInfo(Action):
 
     def name(self) -> Text:
-        return "action_hello_user"
+        return "action_provide_system_info"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        dispatcher.utter_message(text="Xin chào, tôi có thể giúp gì cho bạn!")       
-        return []
-
-class SayByeUser(Action):
-
-    def name(self) -> Text:
-        return "action_bye_user"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-        dispatcher.utter_message(text="Xin chào, tôi có thể giúp gì cho bạn!")       
+        dispatcher.utter_message(text="")       
         return []

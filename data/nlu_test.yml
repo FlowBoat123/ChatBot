@@ -1,0 +1,19 @@
+version: "3.1"
+nlu: 
+  - intent: Chao
+    examples: |
+      - hello
+      - xin chào
+      - hi
+      
+  - intent: goodbye
+    examples: |
+      - bye
+      - tạm biệt
+      - see you soon
+  
+  - intent: OTP
+    examples: | 
+      - OTP
+      - give me OTP
+      - where OTP
