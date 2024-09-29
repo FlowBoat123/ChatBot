@@ -48,6 +48,8 @@ stories:
     - action: action_extract_stock_entity
     - intent: Xác nhận mua cổ phiếu
     - action: action_confirm_order
+    - intent: Thông tin các cổ phiếu đã mua
+    - action: action_list_stock
 
 - story: ask policy info
   steps: 

@@ -60,12 +60,68 @@ class ExtractStockEnity(Action):
         amount = next(tracker.get_latest_entity_values('amount'), None) 
 
         if stock_symbol:
-            dispatcher.utter_message(text=f"You have selected {stock_symbol} as your stock choice")
             dispatcher.utter_message(text=f"Hãy xác nhận mua {amount} cổ phiếu {stock_symbol}")
         else:
-            dispatcher.utter_message(text="Im sorry, I could not detect the stock choice")
+            dispatcher.utter_message(text="Xin lỗi, tôi không thể xác định được cổ phiếu mà bạn định mua, hãy kiểm tra lại tên cô phiếu của bạn.")
         
         return []
+
+class ConfirmPlaceStockOrder(Action):
+    def name(self) -> Text:
+        return "action_confirm_order"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        stock_symbol = next(tracker.get_latest_entity_values('stock_symbol'), None) 
+        amount = next(tracker.get_latest_entity_values('amount'), None) 
+
+        if stock_symbol and amount:
+            # Get the current list of stocks form the slot
+            current_stocks = tracker.get_slot("stocks")
+
+            if current_stocks is None:
+                current_stocks = []
+
+            # Check if stock already in the list, update the amount if found
+            stock_found = False
+            for stock in current_stocks:
+                if stock["stock_symbol"] == stock_symbol:
+                    stock["amount"] += int(amount)
+                    stock_found = True
+                    dispatcher.utter_message(text=f'Đã hoàn tất giao dịch mua {amount} cổ phiếu {stock_symbol}')
+                    break
+
+            # if stock not already in the list, append it ! :3
+            if not stock_found:
+                current_stocks.append({"stock_symbol": stock_symbol, "amount": int(amount)})
+                dispatcher.utter_message(text=f'Đã hoàn tất giao dịch mua {amount} cổ phiếu {stock_symbol}')  
+        
+        else:
+            dispatcher.utter_message(text='Hãy kiểm tra lại giao dịch của bạn!')  
+        
+        return [{"slot": "stocks", "value": current_stocks}]
+
+class ActionListStocks(Action):
+    def name(self) -> Text:
+        return "action_list_stock"
+    
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+            # Get the current_stock to list
+            current_stocks = tracker.get_slot("stocks")
+
+            if isinstance(current_stocks, list): 
+                stock_list = [f"{stock['amount']} shares of {stock['stock_symbol']}" for stock in current_stocks]
+                dispatcher.utter_message(text=f"You currently own: {', '.join(stock_list)}.")
+            else:
+                dispatcher.utter_message(text="You haven't buy any stock yet")
+            return []
+
+
 
 class FindPolicyInfo(Action):
 
@@ -128,18 +184,6 @@ class ReceiveNickname(Action):  # Ask for the user's nickname
         
         return [SlotSet("user_name", text)]
         
-
-class ConfirmPlaceStockOrder(Action):
-
-    def name(self) -> Text:
-        return "action_confirm_order"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-        dispatcher.utter_message(text="Xác nhận thực hiện giao dịch")       
-        return []
 
 class ProvideSystemInfo(Action):
 

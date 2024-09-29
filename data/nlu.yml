@@ -258,11 +258,66 @@ nlu:
     - Chưa rõ, cần xem xét lại.
     - Để tôi cân nhắc đã.
     - tin tức
+
+- intent: Bán cổ phiếu
+  examples: |
+    - Bán (amount) cổ phiếu (stock_symbol).
+    - Bán (amount) (stock_symbol).
+    - Tôi muốn bán (amount) cổ phiếu của (stock_symbol).
+    - Bạn có thể giúp tôi bán (amount) cổ phiếu của (stock_symbol) ngay (time) được không?
+    - Làm ơn bán (amount) cổ phiếu của (stock_symbol) giúp tôi.
+    - Tôi muốn bán (amount) cổ phiếu của (stock_symbol) trong phiên giao dịch này.
+    - Bạn giúp tôi bán (amount) cổ phiếu của (stock_symbol) với giá hiện tại.
+    - Tôi cần bán (amount) cổ phiếu của (stock_symbol) ngay (time).
+    - Bạn có thể bán (amount) cổ phiếu của (stock_symbol) giúp tôi trong phiên này không?
+    - Tôi muốn bán (amount) cổ phiếu của (stock_symbol) với giá hiện tại.
+    - Bạn có thể bán cho tôi (amount) cổ phiếu của (stock_symbol) ngay lúc này không?
+    - Tôi muốn bán (amount) cổ phiếu của (stock_symbol).
+    - Bán (amount) cổ phiếu (stock_symbol).
+    - Giúp bán (amount) cổ phiếu (stock_symbol).
+
+
 - intent: Đặt lệnh mua cổ phiếu trong phiên
   examples: |
     - Tôi muốn đặt lệnh mua [100](amount) cổ phiếu của công ty [Vinamilk](stock_symbol) trong phiên này(time).
     - Bạn có thể giúp tôi đặt lệnh mua [200](amount) cổ phiếu của [FPT](stock_symbol) ngay [bây giờ](time) được không?
     - Làm ơn đặt lệnh mua [50](amount) cổ phiếu của [Vietcombank](stock_symbol) trong phiên [hôm nay](time).
+    
+
+- intent: Kiểm tra giao dịch
+  examples: |
+    - Tôi muốn biết liệu lệnh bán cổ phiếu (stock_symbol) của tôi đã thực hiện chưa?
+    - Bạn có thể kiểm tra giúp tôi xem lệnh bán (amount) cổ phiếu (stock_symbol) đã hoàn thành chưa?
+    - Tôi đã bán (amount) cổ phiếu (stock_symbol), bạn có thể cho tôi biết kết quả không?
+    - Bạn có thể xác nhận xem lệnh bán (amount) cổ phiếu (stock_symbol) của tôi đã được khớp lệnh chưa?
+    - Tôi muốn biết liệu lệnh bán (amount) cổ phiếu (stock_symbol) của tôi đã xong chưa?
+    - Bạn giúp tôi kiểm tra xem lệnh bán (amount) cổ phiếu (stock_symbol) của tôi đã hoàn tất chưa?
+    - Lệnh bán (amount) cổ phiếu (stock_symbol) của tôi đã được thực hiện chưa?
+    - Tôi muốn biết lệnh bán (amount) cổ phiếu (stock_symbol) của tôi đã khớp chưa?
+    - Bạn có thể kiểm tra giúp tôi xem lệnh bán (amount) cổ phiếu (stock_symbol) đã được xử lý chưa?
+    - Tôi muốn biết lệnh bán (amount) cổ phiếu (stock_symbol) của tôi đã hoàn tất chưa?
+    - Lệnh bán (stock_symbol) đã thực hiện chưa?
+    - Lệnh bán (amount) cổ phiếu (stock_symbol) đã hoàn thành chưa?
+    - Đã bán (amount) cổ phiếu (stock_symbol) chưa?
+    - Lệnh bán (amount) cổ phiếu (stock_symbol) đã khớp chưa?
+    - Lệnh bán (amount) cổ phiếu (stock_symbol) đã xong chưa?
+    - Lệnh bán (amount) cổ phiếu (stock_symbol) đã hoàn tất chưa?
+    - Lệnh bán (amount) cổ phiếu (stock_symbol) đã thực hiện chưa?
+    - Lệnh bán (amount) cổ phiếu (stock_symbol) đã khớp chưa?
+    - Lệnh bán (amount) cổ phiếu (stock_symbol) đã xử lý chưa?
+    - Lệnh bán (amount) cổ phiếu (stock_symbol) đã hoàn tất chưa?
+    - Bán (stock_symbol) xong chưa?
+    - (stock_symbol) đã bán chưa?
+    - (amount) (stock_symbol) bán chưa?
+    - (amount) (stock_symbol) đã khớp chưa?
+    - (amount) (stock_symbol) bán xong chưa?
+    - (amount) (stock_symbol) hoàn tất chưa?
+    - (amount) (stock_symbol) đã bán chưa?
+    - (amount) (stock_symbol) bán chưa?
+    - (stock_symbol) đã bán chưa?
+    - (stock_symbol) đã xong chưa?
+
+
 - intent: Thông tin tài khoản
   examples: |
     - Tên đăng nhập của tôi là gì?
@@ -275,6 +330,68 @@ nlu:
     - Tên đăng nhập tài khoản của tôi là gì?
     - Tôi cần biết tên đăng nhập của mình, bạn có thể kiểm tra không?
     - Tên đăng nhập của tôi trong hệ thống là gì?
+
+- intent: Thông tin các cổ phiếu đã mua
+  examples: |
+    - Bạn có thể cho tôi biết danh sách các mã cổ phiếu tôi đã mua không?
+    - Tôi muốn biết tất cả các mã cổ phiếu mà tôi đang nắm giữ.
+    - Bạn có thể kiểm tra giúp tôi danh sách các cổ phiếu tôi đã mua không?
+    - Tôi cần xem lại các mã cổ phiếu mà tôi đã đầu tư.
+    - Bạn có thể cho tôi biết tôi đã mua những cổ phiếu nào không?
+    - Vui lòng cung cấp thông tin về các mã cổ phiếu tôi đang nắm giữ.
+    - Tôi muốn biết danh sách các cổ phiếu hiện tại trong tài khoản của tôi.
+    - Bạn có thể kiểm tra và cho tôi biết các mã cổ phiếu tôi đã mua?
+    - Tôi muốn xem danh sách các cổ phiếu mà tôi đã đầu tư.
+    - Bạn có thể liệt kê các mã cổ phiếu mà tôi đang có?
+    - Danh sách các mã cổ phiếu đã mua là gì?
+    - Tôi đã mua những cổ phiếu nào?
+    - Các mã cổ phiếu trong tài khoản của tôi?
+    - Kiểm tra danh sách cổ phiếu giúp tôi.
+    - Tôi đã mua cổ phiếu nào?
+    - Các mã cổ phiếu đã mua?
+    - Kiểm tra giúp tôi các cổ phiếu đã mua.
+    - Những cổ phiếu tôi đang nắm giữ là gì?
+    - Tôi đang giữ những mã cổ phiếu nào?
+    - Cổ phiếu trong tài khoản của tôi?
+    - Mã cổ phiếu?
+    - Đã mua gì?
+    - Cổ phiếu đâu?
+    - Cổ phiếu đã mua?
+    - Mã đã mua?
+    - Danh sách cổ phiếu?
+
+- intent: Thông tin số dư
+  examples: |
+    - Bạn có thể cho tôi biết số dư hiện tại trong tài khoản của tôi không?
+    - Tôi muốn kiểm tra số dư tài khoản của mình, bạn có thể giúp tôi không?
+    - Vui lòng cung cấp thông tin về số dư trong tài khoản của tôi.
+    - Tôi cần biết số tiền hiện có trong tài khoản của mình.
+    - Bạn có thể cho tôi biết tài khoản của tôi còn bao nhiêu tiền không?
+    - Xin vui lòng kiểm tra số dư tài khoản cho tôi.
+    - Tôi muốn biết số tiền hiện có trong tài khoản ngân hàng của mình.
+    - Vui lòng cho tôi biết số dư tài khoản hiện tại.
+    - Bạn có thể kiểm tra giúp tôi số dư tài khoản được không?
+    - Tôi muốn biết tài khoản của mình có bao nhiêu tiền.
+    - Số dư hiện tại trong tài khoản là bao nhiêu?
+    - Số tiền trong tài khoản của tôi?
+    - Kiểm tra số dư tài khoản giúp tôi.
+    - Số dư tài khoản hiện tại?
+    - Tài khoản còn bao nhiêu tiền?
+    - Kiểm tra số dư giúp tôi.
+    - Số dư tài khoản tôi là bao nhiêu?
+    - Số tiền trong tài khoản của tôi là bao nhiêu?
+    - Tài khoản của tôi còn bao nhiêu?
+    - Số dư trong tài khoản?
+    - Số dư?
+    - Còn bao nhiêu tiền?
+    - Tài khoản còn bao nhiêu?
+    - Số dư tài khoản?
+    - Bao nhiêu?
+    - Còn tiền?
+    - Số dư đâu?
+    - Còn bao nhiêu?
+    - Kiểm tra tiền.
+
 - intent: Chao
   examples: |
     - Chào chatbot, tôi cần sự giúp đỡ của bạn trong việc tìm kiếm thông tin.
@@ -303,6 +420,7 @@ nlu:
     - Hello there!
     - Chào bạn!
     - hi
+
 - intent: goodbye
   examples: |
     - cu

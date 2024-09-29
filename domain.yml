@@ -10,6 +10,7 @@ intents:
 - Thông tin tài khoản
 - Xác nhận mua cổ phiếu
 - goodbye
+- Thông tin các cổ phiếu đã mua
 - Đặt lệnh mua cổ phiếu trong phiên
 - give_info
 
@@ -36,7 +37,7 @@ slots:
     mappings:
     - type: from_entity
       entity: stock_symbol
-      condiions:
+      conditions:
       - active_loop: null
 
   amount: # amount of the stock
@@ -45,7 +46,7 @@ slots:
     mappings:
     - type: from_entity
       entity: amount
-      condiions:
+      conditions:
       - active_loop: null
   
   time: # what time is it
@@ -54,7 +55,7 @@ slots:
     mappings:
     - type: from_entity
       entity: time
-      condiions:
+      conditions:
       - active_loop: null
   
   location: # where are u now
@@ -63,7 +64,16 @@ slots:
     mappings:
     - type: from_entity
       entity: location
-      condiions:
+      conditions:
+      - active_loop: null
+
+  stocks: 
+    type: list
+    influence_conversation: false 
+    mappings:
+    - type: from_entity
+      entity: stock_symbol  # This assumes you'll extract stock symbols as entities
+      conditions:
       - active_loop: null
 
 
@@ -79,8 +89,17 @@ responses:
   utter_OTP:
   - text: Mã OTP của bạn sẽ được gửi ngay bây giờ.
   utter_help:
-  - text: "Easy 
-    peasy"
+  - text: "🤖 Chatbot Rasa(Version 3.1) cung cấp, cập nhật thông tin mới nhất về cổ phiếu hiện tại
+            Bạn có thể sử dụng các câu lệnh sau để hiểu thêm về chatbot này:
+            - Tình hình thị trường hiện tại: Hệ thống sẽ cung cấp thông tin thị trường cụ thể
+            - Thời gian giao dịch: Cung cấp thời gian giao dịch của thị trường chứng khoán
+            - Phí giao dịch: Cung cấp phí giao dịch về 1 cổ phiếu cụ thể
+            - Số dư hiện tại: Cung cấp số dư hiện tại của tài khoản
+            - Mua cố phiếu A số lượng B: Hệ thống sẽ mua cổ phiếu A số lượng B cho bạn
+            - Xác nhận thực hiện giao dịch: Hệ thống sẽ thực hiện giao dịch gần nhất mà bạn thực hiện
+            - Hủy thực hiện giao dịch: Hủy giao dịch mà hệ thống đang thực hiện
+            - Bán cổ phiếu A số lượng B: tương tự với mua cổ phiếu
+            - ...."
 actions:
 - utter_greet
 - utter_goodbye
@@ -94,6 +113,7 @@ actions:
 - action_account_info
 - action_provide_system_info
 - receive_account_info
+- action_list_stock
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
