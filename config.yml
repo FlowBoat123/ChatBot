@@ -26,6 +26,10 @@ pipeline:
     max_ngram: 4
   - name: DIETClassifier
     epochs: 100
+    intent_classification: True
+    entity_recognition: True
+    max_history: 5  # This increases the model's memory for recognizing the correct intent
+    similarity_type: inner  # Change this to 'cosine' if inner doesn't work
 #     constrain_similarities: true
 #   - name: EntitySynonymMapper
 #   - name: ResponseSelector

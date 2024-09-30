@@ -1,5 +1,8 @@
 version: "3.1"
 nlu:
+- regex: stock_symbol
+  examples: |
+    - [A-Z]{3,5}
 - intent: OTP
   examples: |
     - Gửi mã OTP cho tôi để đăng nhập.
@@ -61,6 +64,11 @@ nlu:
     - [VNM](stock_symbol)
     - [VCB](stock_symbol)
     - [VIC](stock_symbol)
+    - Tôi đã mua cổ phiếu [VCB](stock_symbol)
+    - Thông tin về mã [CEO](stock_symbol) 
+    - Giá của [SSI](stock_symbol) là gì?
+    - Cổ phiếu [VNM](stock_symbol) có xu hướng tăng
+    - Hiện tại tôi muốn biết thông tin về cổ phiếu [VIC](stock_symbol)
 - intent: Thông tin chính sách
   examples: |
     - Tôi muốn biết mức phí giao dịch hiện tại của công ty là bao nhiêu?
@@ -119,61 +127,6 @@ nlu:
     - Giờ mở?
     - Giờ thị trường?
     - Giờ mở hôm nay?
-    - Bạn có thể cho tôi biết số dư hiện tại trong tài khoản của tôi không?
-    - Tôi muốn kiểm tra số dư tài khoản của mình, bạn có thể giúp tôi không?
-    - Vui lòng cung cấp thông tin về số dư trong tài khoản của tôi.
-    - Tôi cần biết số tiền hiện có trong tài khoản của mình.
-    - Bạn có thể cho tôi biết tài khoản của tôi còn bao nhiêu tiền không?
-    - Xin vui lòng kiểm tra số dư tài khoản cho tôi.
-    - Tôi muốn biết số tiền hiện có trong tài khoản ngân hàng của mình.
-    - Vui lòng cho tôi biết số dư tài khoản hiện tại.
-    - Bạn có thể kiểm tra giúp tôi số dư tài khoản được không?
-    - Tôi muốn biết tài khoản của mình có bao nhiêu tiền.
-    - Số dư hiện tại trong tài khoản là bao nhiêu?
-    - Số tiền trong tài khoản của tôi?
-    - Kiểm tra số dư tài khoản giúp tôi.
-    - Số dư tài khoản hiện tại?
-    - Tài khoản còn bao nhiêu tiền?
-    - Kiểm tra số dư giúp tôi.
-    - Số dư tài khoản tôi là bao nhiêu?
-    - Số tiền trong tài khoản của tôi là bao nhiêu?
-    - Tài khoản của tôi còn bao nhiêu?
-    - Số dư trong tài khoản?
-    - Số dư?
-    - Còn bao nhiêu tiền?
-    - Tài khoản còn bao nhiêu?
-    - Số dư tài khoản?
-    - Bao nhiêu?
-    - Còn tiền?
-    - Số dư đâu?
-    - Còn bao nhiêu?
-    - Kiểm tra tiền.
-    - Bạn có thể cho tôi biết danh sách các mã cổ phiếu tôi đã mua không?
-    - Tôi muốn biết tất cả các mã cổ phiếu mà tôi đang nắm giữ.
-    - Bạn có thể kiểm tra giúp tôi danh sách các cổ phiếu tôi đã mua không?
-    - Tôi cần xem lại các mã cổ phiếu mà tôi đã đầu tư.
-    - Bạn có thể cho tôi biết tôi đã mua những cổ phiếu nào không?
-    - Vui lòng cung cấp thông tin về các mã cổ phiếu tôi đang nắm giữ.
-    - Tôi muốn biết danh sách các cổ phiếu hiện tại trong tài khoản của tôi.
-    - Bạn có thể kiểm tra và cho tôi biết các mã cổ phiếu tôi đã mua?
-    - Tôi muốn xem danh sách các cổ phiếu mà tôi đã đầu tư.
-    - Bạn có thể liệt kê các mã cổ phiếu mà tôi đang có?
-    - Danh sách các mã cổ phiếu đã mua là gì?
-    - Tôi đã mua những cổ phiếu nào?
-    - Các mã cổ phiếu trong tài khoản của tôi?
-    - Kiểm tra danh sách cổ phiếu giúp tôi.
-    - Tôi đã mua cổ phiếu nào?
-    - Các mã cổ phiếu đã mua?
-    - Kiểm tra giúp tôi các cổ phiếu đã mua.
-    - Những cổ phiếu tôi đang nắm giữ là gì?
-    - Tôi đang giữ những mã cổ phiếu nào?
-    - Cổ phiếu trong tài khoản của tôi?
-    - Mã cổ phiếu?
-    - Đã mua gì?
-    - Cổ phiếu đâu?
-    - Cổ phiếu đã mua?
-    - Mã đã mua?
-    - Danh sách cổ phiếu?
     - Bạn có thể cho tôi biết sự biến động của các mã cổ phiếu tôi đã mua không?
     - Tôi muốn biết các mã cổ phiếu đã mua của tôi biến động như thế nào.
     - Bạn có thể kiểm tra giúp tôi tình hình biến động của các cổ phiếu tôi đã mua không?
@@ -282,7 +235,7 @@ nlu:
     - Tôi muốn đặt lệnh mua [100](amount) cổ phiếu của công ty [Vinamilk](stock_symbol) trong phiên này(time).
     - Bạn có thể giúp tôi đặt lệnh mua [200](amount) cổ phiếu của [FPT](stock_symbol) ngay [bây giờ](time) được không?
     - Làm ơn đặt lệnh mua [50](amount) cổ phiếu của [Vietcombank](stock_symbol) trong phiên [hôm nay](time).
-    
+
 
 - intent: Kiểm tra giao dịch
   examples: |

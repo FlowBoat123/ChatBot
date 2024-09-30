@@ -17,6 +17,7 @@ intents:
 entities:
 - amount
 - stock_symbol
+- stock_list
 - time 
 - location
 - user_name
@@ -72,7 +73,7 @@ slots:
     influence_conversation: false 
     mappings:
     - type: from_entity
-      entity: stock_symbol  # This assumes you'll extract stock symbols as entities
+      entity: stock_list  # This assumes you'll extract stock symbols as entities
       conditions:
       - active_loop: null
 
@@ -104,7 +105,6 @@ actions:
 - utter_greet
 - utter_goodbye
 - utter_OTP
-- action_confirm_order
 - action_extract_stock_entity
 - action_find_stock_news
 - action_find_stock_details
@@ -114,6 +114,7 @@ actions:
 - action_provide_system_info
 - receive_account_info
 - action_list_stock
+- action_confirm_order_2
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
