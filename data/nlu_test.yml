@@ -5,15 +5,88 @@ nlu:
       - hello
       - xin chào
       - hi
+      - hi hi
+      - chào
+      - ni hao
+      - bonjour
+
       
   - intent: goodbye
     examples: |
       - bye
       - tạm biệt
       - see you soon
+      - cu
+      - cút
   
   - intent: OTP
     examples: | 
       - OTP
       - give me OTP
+      - Get OTP
       - where OTP
+      - send me OTP
+
+  - intent: Thông tin các cổ phiếu đã mua
+    examples: |
+      - Tôi muốn biết những cổ phiếu mà tôi đang giữ.
+      - Bạn có thể liệt kê các cổ phiếu tôi đã mua không?
+      - Danh sách cổ phiếu hiện có trong tài khoản của tôi là gì?
+      - Kiểm tra giúp tôi các mã cổ phiếu tôi đã mua.
+      - Tôi đã mua những mã cổ phiếu nào rồi?
+      - Những cổ phiếu nào tôi đang nắm giữ?
+      - Bạn có thể kiểm tra và cho biết các cổ phiếu tôi đã mua không?
+      - Cổ phiếu tôi mua là gì?
+      - Tôi đang có những mã cổ phiếu nào trong tài khoản của mình?
+      - Bạn có thể giúp tôi kiểm tra cổ phiếu đã mua không?
+  
+  - intent: Xác nhận mua cổ phiếu
+    examples: |
+      - Vâng, thực hiện ngay.
+      - Đúng rồi, mua đi.
+      - Đồng ý, cứ bán đi.
+      - Ừ, xác nhận mua.
+      - Chính xác, mua luôn.
+      - OK, bán nhé.
+      - Không, dừng lại.
+      - Hủy lệnh này đi.
+      - Tôi chưa chắc chắn.
+      - Chờ một chút, tôi không rõ.
+      - Tôi cần thêm thông tin.
+      - Không biết có nên mua không.
+      - Tôi không quyết định được.
+      - Để tôi cân nhắc đã.
+  - intent: Thông tin số dư
+    examples: |
+      - Tài khoản của tôi còn bao nhiêu tiền nhỉ?
+      - Bạn kiểm tra giúp mình số dư được không?
+      - Tôi muốn biết mình có bao nhiêu trong tài khoản.
+      - Số dư của tôi hiện tại là bao nhiêu?
+      - Tài khoản ngân hàng của tôi còn tiền không?
+      - Xem giùm tôi số tiền trong tài khoản nha!
+      - Tôi còn bao nhiêu trong tài khoản rồi?
+      - Tài khoản của mình còn tiền không nhỉ?
+      - Số tiền hiện có trong tài khoản của tôi là bao nhiêu?
+      - Tài khoản mình còn lại bao nhiêu?
+      - Bạn có thể xem giúp tôi số dư hiện tại không?
+      - Tôi muốn biết số dư hiện tại của mình là bao nhiêu.
+      - Tài khoản của tôi có tiền không?
+      - Bạn cho tôi biết số dư tài khoản được không?
+      - Kiểm tra xem tôi còn tiền không?
+      - Số dư tài khoản của tôi còn nhiều không?
+      - Tài khoản của tôi đang có bao nhiêu tiền vậy?
+      - Bạn kiểm tra số dư trong tài khoản giúp tôi nhé?
+      - Tôi còn bao nhiêu trong ngân hàng?
+      - Hiện tại tài khoản của tôi còn tiền không?
+      - Tôi cần biết số tiền trong tài khoản ngay bây giờ.
+      - Kiểm tra giúp tôi xem còn bao nhiêu trong tài khoản.
+      - Số dư tài khoản của tôi hiện tại là bao nhiêu?
+      - Còn bao nhiêu trong tài khoản của tôi nhỉ?
+      - Tôi có thể biết tài khoản của mình còn bao nhiêu không?
+      - Bạn kiểm tra giúp tôi xem còn bao nhiêu tiền trong tài khoản không?
+      - Tài khoản mình còn dư bao nhiêu tiền vậy?
+      - Số dư trong tài khoản của tôi có đủ không?
+      - Tôi muốn biết số dư hiện tại trong tài khoản của mình.
+
+
+    
