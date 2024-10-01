@@ -198,7 +198,7 @@ class ReceiveNickname(Action):  # Ask for the user's nickname
         if name:
             dispatcher.utter_message(text=f'Hello {name}, how can I assist you?')
             return []
-
+          
         text = tracker.latest_message['text']
         dispatcher.utter_message(text=f'Hello {text}, nice to meet you!')
         
@@ -216,3 +216,4 @@ class ProvideSystemInfo(Action):
 
         dispatcher.utter_message(text="")       
         return []
+

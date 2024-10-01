@@ -2,6 +2,7 @@ version: "3.1"
 
 rules:
 
+
 - rule: Đáp lại mỗi khi người dùng chào
   steps:
   - intent: Chào
@@ -11,5 +12,4 @@ rules:
   steps:
   - intent: Cảm xúc
   - action: phan_hoi_cam_xuc
-
 
