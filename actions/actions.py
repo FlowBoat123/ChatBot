@@ -216,3 +216,29 @@ class ProvideSystemInfo(Action):
 
         dispatcher.utter_message(text="")       
         return []
+    
+
+import aiohttp
+
+class ActionQueryMindsDB(Action):
+    def name(self):
+        return "action_query_mindsdb"
+
+    async def run(self, dispatcher, tracker, domain):
+        user_input = tracker.latest_message.get("text")
+        query = f"SELECT * FROM your_model WHERE condition = '{user_input}'"
+
+        # Query MindsDB
+        url = "http://localhost:47334/sql/query"
+        headers = {"Content-Type": "application/json"}
+        data = {"query": query}
+
+        async with aiohttp.ClientSession() as session:
+            async with session.post(url, json=data, headers=headers) as resp:
+                if resp.status == 200:
+                    result = await resp.json()
+                    dispatcher.utter_message(text=f"Prediction: {result}")
+                else:
+                    dispatcher.utter_message(text="Failed to query MindsDB.")
+
+        return []

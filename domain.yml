@@ -13,6 +13,7 @@ intents:
 - Thông tin các cổ phiếu đã mua
 - Đặt lệnh mua cổ phiếu trong phiên
 - give_info
+- Thông tin số dư
 
 entities:
 - amount
@@ -102,19 +103,21 @@ responses:
             - Bán cổ phiếu A số lượng B: tương tự với mua cổ phiếu
             - ...."
 actions:
-- utter_greet
-- utter_goodbye
-- utter_OTP
-- action_extract_stock_entity
-- action_find_stock_news
-- action_find_stock_details
-- action_find_policy_info
-- action_find_work_info
-- action_account_info
-- action_provide_system_info
-- receive_account_info
-- action_list_stock
-- action_confirm_order_2
+  - utter_greet
+  - utter_goodbye
+  - utter_OTP
+  - action_extract_stock_entity
+  - action_find_stock_news
+  - action_find_stock_details
+  - action_find_policy_info
+  - action_find_work_info
+  - action_account_info
+  - action_provide_system_info
+  - receive_account_info
+  - action_list_stock
+  - action_confirm_order_2
+  - action_predict_with_mindsdb
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

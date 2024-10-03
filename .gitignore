@@ -1,4 +1,8 @@
 venv
+mindsdb_env
+results
+models
+story_graph.dot
 .vscode
 .rasa
 .ipynb_checkpoints
