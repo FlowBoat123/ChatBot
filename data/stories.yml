@@ -77,6 +77,14 @@ stories:
     - intent: goodbye
     - action: utter_goodbye
 
+- story: greet and ask model
+  steps:
+    - intent: ask_model
+    - action: action_predict
+    # - action: utter_model_response
+    # - slot_was_set:
+    #     - model_response: "Dự đoán từ MindsDB"
+
 
 # - story: confirm place stock order
 #   steps:

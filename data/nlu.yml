@@ -414,3 +414,8 @@ nlu:
     - hỗ trợ
     - sp
     - support
+
+- intent: ask_model
+  examples: |
+    - Tôi muốn dự đoán
+    - Bạn có thể giúp tôi dự đoán?

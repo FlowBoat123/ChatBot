@@ -3,10 +3,10 @@ version: "3.1"
 rules:
 
 
-- rule: Đáp lại mỗi khi người dùng chào
-  steps:
-  - intent: Chào
-  - action: phan_hoi_chao
+# - rule: Đáp lại mỗi khi người dùng chào
+#   steps:
+#   - intent: Chào
+#   - action: phan_hoi_chao
 
 # - rule: Đáp lại mỗi khi người dùng cảm xúc
 #   steps:

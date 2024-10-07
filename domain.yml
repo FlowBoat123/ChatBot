@@ -14,6 +14,7 @@ intents:
 - Đặt lệnh mua cổ phiếu trong phiên
 - give_info
 - Thông tin số dư
+- ask_model
 
 entities:
 - amount
@@ -22,6 +23,7 @@ entities:
 - time 
 - location
 - user_name
+# - model_response
  
 slots:
   user_name: # name for user
@@ -78,6 +80,15 @@ slots:
       conditions:
       - active_loop: null
 
+  # model_response:  # Thêm định nghĩa cho slot model_response
+  #   type: text
+  #   influence_conversation: false
+  #   mappings:
+  #   - type: from_entity
+  #     entity: model_response  # This assumes you'll extract stock symbols as entities
+  #     conditions:
+  #     - active_loop: null
+
 
 responses:
   utter_greet:
@@ -102,6 +113,9 @@ responses:
             - Hủy thực hiện giao dịch: Hủy giao dịch mà hệ thống đang thực hiện
             - Bán cổ phiếu A số lượng B: tương tự với mua cổ phiếu
             - ...."
+  # utter_model_response:
+  #   - text: "MindsDB dự đoán: {model_response}"
+      
 actions:
   - utter_greet
   - utter_goodbye
@@ -117,6 +131,7 @@ actions:
   - action_list_stock
   - action_confirm_order_2
   - action_predict_with_mindsdb
+  - action_predict
 
 session_config:
   session_expiration_time: 60

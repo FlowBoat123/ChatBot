@@ -16,8 +16,6 @@ nlu:
       - bye
       - tạm biệt
       - see you soon
-      - cu
-      - cút
   
   - intent: OTP
     examples: | 
