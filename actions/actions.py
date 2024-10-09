@@ -242,3 +242,27 @@ class ActionQueryMindsDB(Action):
                     dispatcher.utter_message(text="Failed to query MindsDB.")
 
         return []
+
+
+class ActionReturnIntentAndEntity(Action):
+
+    def name(self) -> Text:
+        return "action_return_intent_and_entity"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        # Lấy intent và entity từ tracker
+        user_intent = tracker.latest_message['intent'].get('name')
+        user_entities = tracker.latest_message['entities']
+
+        response_data = {
+            "intent": user_intent,
+            "entities": user_entities if user_entities else []
+        }
+
+        # Trả về phản hồi JSON
+        dispatcher.utter_message(text=str(response_data))  # Chuyển đổi dict thành chuỗi
+
+        return []

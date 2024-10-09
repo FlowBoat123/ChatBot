@@ -132,6 +132,7 @@ actions:
   - action_confirm_order_2
   - action_predict_with_mindsdb
   - action_predict
+  - action_return_intent_and_entity
 
 session_config:
   session_expiration_time: 60

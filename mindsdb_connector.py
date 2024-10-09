@@ -26,9 +26,9 @@ class MindsDBConnector(InputChannel):
                 else:
                     return {"error": "Failed to query MindsDB"}
 
-    async def handle_message(self, text: str):
+    async def handle_message(self, query: str):
         # Customize how you handle user input
-        query = f"SELECT * FROM files.stocks WHERE stock_symbol = '{text}';"
+        # query = f"SELECT * FROM files.stocks WHERE stock_symbol = '{text}';"
         result = await self._query_mindsdb(query)
         return result
 
