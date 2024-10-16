@@ -1,4 +1,5 @@
 import logging
+import random
 from mindsdb_connector import MindsDBConnector
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
@@ -15,56 +16,80 @@ def format_input(input_str, replacements):
         input_str = input_str.replace(key, f"[{value}]({key[1:-1]})")
     return input_str
 
+def replace_braces(text):
+    return text.replace('{', '(').replace('}', ')')
+
 def create_nlu_file(data):
-    # with open('data/nlu.yml', 'a', encoding='utf-8') as nlu_file:
-    #     nlu_file.write(f"- intent: {data['intent']}\n")
-    #     nlu_file.write(f"  examples: |\n    - {data['example']}\n")
-    print('nlu.yml')
-    print("version: '3.1'\nnlu:")
-    i = 0
-    while i < len(data):
-        # print(data[i])
-        intent = data[i][1] if data[i][1] is not None else data[i][0]
-        print(f"- intent: {intent}\n  examples: |")
-        while i < len(data) and (data[i][0] == intent or data[i][1] == intent):
-            example1 = data[i][2]  # Lấy example
-            example2 = data[i][3]
-            print(example1, example2)
-            if example2 is not None:
-                # print(example1, example2)
-                diff = difflib.ndiff(example1.split(' '), example2.split(' '))
-                # Lấy ra các điểm khác nhau
-                differences = [word for word in diff if word.startswith('+ ') or word.startswith('- ')]
-                print("Điểm khác nhau giữa hai chuỗi:")
-                for difference in differences:
-                    print(difference)
-            else:
-                print(f"    - {example1}")
-            i += 1
+    with open('data/nlu.yml', 'w', encoding='utf-8') as nlu_file:
+        nlu_file.write("version: '3.1'")
+        nlu_file.write("\n\nnlu:")
+        i = 0
+        while i < len(data):
+            # print(data[i])
+            intent = data[i][1] if data[i][1] is not None else data[i][0]
+            nlu_file.write(f"\n\n- intent: {intent}\n  examples: |")
+            while i < len(data) and (data[i][0] == intent or data[i][1] == intent):
+                example = data[i][2]  # Lấy example
+                nlu_file.write(f"\n    - {replace_braces(example)}")
+                i += 1
+        
+        #lệnh test lấy dữ liệu mindsDB
+        nlu_file.write("\n\n- intent: lấy dữ liệu\n  examples: |\n    - Lấy dữ liệu từ mindsDB")
+        #
+
+def create_nlu_test_file(data):
+    with open('tests/nlu_test.yml', 'w', encoding='utf-8') as nlu_file:
+        nlu_file.write("version: '3.1'")
+        nlu_file.write("\n\nnlu:")
+        i = 0
+        while i < len(data):
+            # print(data[i])
+            intent = data[i][1] if data[i][1] is not None else data[i][0]
+            nlu_file.write(f"\n\n- intent: {intent}\n  examples: |")
+            while i < len(data) and (data[i][0] == intent or data[i][1] == intent):
+                example = data[i][2]  # Lấy example
+                nlu_file.write(f"\n    - {replace_braces(example)}")
+                i += 1
 
 def create_domain_file(data):
-    # with open('domain.yml', 'a', encoding='utf-8') as domain_file:
-    #     domain_file.write(f"\nintents:\n  - {data['intent']}\n")
-    print('domain.yml')
-    # print(f"version: '3.1'\nintents:")
-    # for intent in data['intent']:
-    #     print(f"- {intent}")
+    with open('domain.yml', 'w', encoding='utf-8') as domain_file:
+        domain_file.write("version: '3.1'")
+        domain_file.write("\n\nintents:")
+        for intent in data['intent']:
+            domain_file.write(f"\n  - {intent}")
 
-    # print("\nentities:")
-    # for entity in data['entities']:
-    #     print(f"- {entity}")
-    # print('\nactions:')
-    # print(" - action_return_intent_and_entity")
+        #lệnh test lấy dữ liệu mindsDB
+        domain_file.write(f"\n  - lấy dữ liệu")
+        #
 
-def create_stories_file(data):
-    # with open('data/stories.yml', 'a', encoding='utf-8') as stories_file:
-    #     stories_file.write(f"\n- story: {data['story_name']}\n")
-    #     stories_file.write(f"  steps:\n    - intent: {data['intent']}\n")
-    print('stories.yml')
-    print(f"version: '3.1'\nstories:")
+        domain_file.write("\n\nentities:")
+        for entity in data['entities']:
+            domain_file.write(f"\n  - {entity}")
 
-    # print(f"\n- story: {data['story_name']}\n")
-    # print(f"  steps:\n    - intent: {data['intent']}\n")
+        domain_file.write('\n\nactions:')
+        domain_file.write("\n  - action_return_intent_and_entity")
+        
+        #lệnh test lấy dữ liệu mindsDB
+        domain_file.write("\n  - action_get_data_from_mindsDB")
+        #
+
+        domain_file.write("\n\nsession_config:\n  session_expiration_time: 60\n  carry_over_slots_to_new_session: true")
+
+def create_stories_file(intents):
+    with open('data/stories.yml', 'w', encoding='utf-8') as stories_file:
+        # stories_file.write(f"\n- story: {data['story_name']}\n")
+        # stories_file.write(f"  steps:\n    - intent: {data['intent']}\n")
+        stories_file.write("version: '3.1'")
+        stories_file.write("\n\nstories:")
+
+        for intent in intents:
+            stories_file.write(f"\n- story: {intent}")
+            stories_file.write(f"\n  steps:\n    - intent: {intent}")
+            stories_file.write("\n    - action: action_return_intent_and_entity\n")
+
+        #lệnh test lấy dữ liệu mindsDB
+        stories_file.write("\n- story: lấy dữ liệu từ mindsDB\n  steps:\n    - intent: lấy dữ liệu\n    - action: action_get_data_from_mindsDB")
+        #
 
 def extract_entities(text):
     # Kiểm tra nếu text là None hoặc không phải là chuỗi
@@ -79,9 +104,24 @@ def extract_entities(text):
         # Nếu không có dấu '{' và '}', trả về danh sách rỗng
         return []
 
-class ActionPredictWithMindsDB(Action):
+def split_data(data, prob):
+    """split data into fractions [prob, 1 - prob]"""
+    results = [], []
+    i = 0
+    while i < len(data):
+        # print(data[i])
+        intent = data[i][1] if data[i][1] is not None else data[i][0]
+        while i < len(data) and (data[i][0] == intent or data[i][1] == intent):
+            if random.random() < prob:
+                results[0].append(data[i])  # Thêm toàn bộ intent vào tập train
+            else:
+                results[1].append(data[i])  # Thêm toàn bộ intent vào tập test
+            i += 1
+    return results
+
+class ActionGetDataFromMindsDB(Action):
     def name(self) -> str:
-        return "action_predict"
+        return "action_get_data_from_mindsDB"
 
     async def run(self, dispatcher: CollectingDispatcher,
                   tracker: Tracker,
@@ -92,19 +132,13 @@ class ActionPredictWithMindsDB(Action):
         user_intent = tracker.latest_message.get('intent')
         print(user_message)
         print(user_intent)
-        # # Ghi lại thông tin
-        # logging.info(f"Input data: {input_data}")
-
-        # if input_data is None:
-        #     dispatcher.utter_message(text="Không có dữ liệu đầu vào.")
-        #     return []
 
         # Kết nối với MindsDB và lấy dự đoán
         connector = MindsDBConnector()
         logging.info("Sending query to MindsDB...")  # Thêm logging trước khi gửi yêu cầu
         query = "SELECT * FROM files.chatbot_data;"
         result = await connector.handle_message(query)
-        logging.info(f"Received prediction: {result}")  # Ghi lại giá trị trả về
+        # logging.info(f"Received prediction: {result}")  # Ghi lại giá trị trả về
 
         # Lấy chỉ số của các cột
         intent_index = result['column_names'].index('Intent')
@@ -121,16 +155,18 @@ class ActionPredictWithMindsDB(Action):
         entities = set(entity for question in cau_hoi for entity in extract_entities(question))
         # entities = []
 
-        print("ok")
-        create_nlu_file(result['data'])
+        train_data, test_data = split_data(result['data'], 0.8)
+
+        create_nlu_file(train_data)
+        create_nlu_test_file(test_data)
         create_domain_file({"intent": intents, "entities": entities })
-        create_stories_file({"intent": intents, "story_name": cau_hoi})
+        create_stories_file(intents)
 
         # Kiểm tra giá trị dự đoán
         if "error" in result:
-            dispatcher.utter_message(text="Đã xảy ra lỗi khi dự đoán.")
+            dispatcher.utter_message(text="Đã xảy ra lỗi khi lấy dữ liệu.")
         else:
-            dispatcher.utter_message(text=f"Dự đoán của bạn là: done")
+            dispatcher.utter_message(text=f"Quá trình lấy dữ liệu đã hoàn tất")
             
         # Gán giá trị cho slot
         # model_response = prediction  # Lấy giá trị dự đoán

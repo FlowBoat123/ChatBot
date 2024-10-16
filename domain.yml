@@ -1,138 +1,47 @@
 version: '3.1'
+
 intents:
-- Chao
-- Inform_stock
-- OTP
-- system_info
-- Thông tin chính sách
-- Thông tin làm việc
-- Thông tin thị trường chứng khoán
-- Thông tin tài khoản
-- Xác nhận mua cổ phiếu
-- goodbye
-- Thông tin các cổ phiếu đã mua
-- Đặt lệnh mua cổ phiếu trong phiên
-- give_info
-- Thông tin số dư
-- ask_model
+  - số dư
+  - zalo
+  - Đồng ý
+  - các mã cổ phiếu đã mua
+  - facebook
+  - check lệnh bán
+  - Đặt lệnh mua cổ phiếu trong phiên
+  - hỏi tên đăng nhập
+  - Phí giao dịch
+  - phí bán
+  - từ chối
+  - email
+  - Than
+  - Giờ mở cửa, đóng cửa
+  - messenger
+  - số điện thoại
+  - biến động các cổ phiếu đã mua
+  - đặt lệnh bán
+  - không rõ
+  - Chào
+  - OTP
+  - cổ phiếu bao giờ về
+  - truy vấn đã bán được bao nhiêu cổ phiếu
+  - huỷ mua cổ phiếu
+  - tổng giá trị bán
+  - thuế bán
+  - lịch sử
+  - giao dịch phái sinh
+  - Không phân loại
+  - huỷ bán cổ phiếu
+  - lấy dữ liệu
 
 entities:
-- amount
-- stock_symbol
-- stock_list
-- time 
-- location
-- user_name
-# - model_response
- 
-slots:
-  user_name: # name for user
-    type: text
-    influence_conversation: false 
-    mappings:
-    - type: from_entity
-      entity: user_name
-      conditions:
-      - active_loop: null  # This condition means it can be extracted when no form is active
-  
-  stock_symbol: # stock symbol like CEO, VNM
-    type: text
-    influence_conversation: false 
-    mappings:
-    - type: from_entity
-      entity: stock_symbol
-      conditions:
-      - active_loop: null
+  - price
+  - amount
+  - time
+  - stock_symbol
 
-  amount: # amount of the stock
-    type: float
-    influence_conversation: false 
-    mappings:
-    - type: from_entity
-      entity: amount
-      conditions:
-      - active_loop: null
-  
-  time: # what time is it
-    type: text
-    influence_conversation: false 
-    mappings:
-    - type: from_entity
-      entity: time
-      conditions:
-      - active_loop: null
-  
-  location: # where are u now
-    type: text
-    influence_conversation: false 
-    mappings:
-    - type: from_entity
-      entity: location
-      conditions:
-      - active_loop: null
-
-  stocks: 
-    type: list
-    influence_conversation: false 
-    mappings:
-    - type: from_entity
-      entity: stock_list  # This assumes you'll extract stock symbols as entities
-      conditions:
-      - active_loop: null
-
-  # model_response:  # Thêm định nghĩa cho slot model_response
-  #   type: text
-  #   influence_conversation: false
-  #   mappings:
-  #   - type: from_entity
-  #     entity: model_response  # This assumes you'll extract stock symbols as entities
-  #     conditions:
-  #     - active_loop: null
-
-
-responses:
-  utter_greet:
-  - text: Xin chào, tôi có thể giúp gì cho bạn!
-  - text: Hân hạnh được làm việc với bạn!
-  - text: Chao xìn!
-  utter_goodbye:
-  - text: Tạm biệt.
-  - text: Hẹn gặp lại.
-  - text: Chúc bạn 1 ngày tốt lành.
-  utter_OTP:
-  - text: Mã OTP của bạn sẽ được gửi ngay bây giờ.
-  utter_help:
-  - text: "🤖 Chatbot Rasa(Version 3.1) cung cấp, cập nhật thông tin mới nhất về cổ phiếu hiện tại
-            Bạn có thể sử dụng các câu lệnh sau để hiểu thêm về chatbot này:
-            - Tình hình thị trường hiện tại: Hệ thống sẽ cung cấp thông tin thị trường cụ thể
-            - Thời gian giao dịch: Cung cấp thời gian giao dịch của thị trường chứng khoán
-            - Phí giao dịch: Cung cấp phí giao dịch về 1 cổ phiếu cụ thể
-            - Số dư hiện tại: Cung cấp số dư hiện tại của tài khoản
-            - Mua cố phiếu A số lượng B: Hệ thống sẽ mua cổ phiếu A số lượng B cho bạn
-            - Xác nhận thực hiện giao dịch: Hệ thống sẽ thực hiện giao dịch gần nhất mà bạn thực hiện
-            - Hủy thực hiện giao dịch: Hủy giao dịch mà hệ thống đang thực hiện
-            - Bán cổ phiếu A số lượng B: tương tự với mua cổ phiếu
-            - ...."
-  # utter_model_response:
-  #   - text: "MindsDB dự đoán: {model_response}"
-      
 actions:
-  - utter_greet
-  - utter_goodbye
-  - utter_OTP
-  - action_extract_stock_entity
-  - action_find_stock_news
-  - action_find_stock_details
-  - action_find_policy_info
-  - action_find_work_info
-  - action_account_info
-  - action_provide_system_info
-  - receive_account_info
-  - action_list_stock
-  - action_confirm_order_2
-  - action_predict_with_mindsdb
-  - action_predict
   - action_return_intent_and_entity
+  - action_get_data_from_mindsDB
 
 session_config:
   session_expiration_time: 60

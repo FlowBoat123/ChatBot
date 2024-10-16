@@ -1,92 +1,157 @@
-version: "3.1"
+version: '3.1'
 
 stories:
-
-# - story: happy path
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
-#   - intent: mood_great
-#   - action: utter_happy
-
-# - story: sad path 1
-#   steps:
-#   - intent: Chào
-#   - action: utter_greet
-#   - intent: Cảm xúc
-#   - action: utter_cheer_up
-#   - action: utter_did_that_help
-#   - intent: affirm
-#   - action: utter_happy
-
-# - story: sad path 2
-#   steps:
-#   - intent: Chào
-#   - action: utter_greet
-#   - intent: Cảm xúc
-#   - action: utter_cheer_up
-#   - action: utter_did_that_help
-#   - intent: deny
-#   - action: utter_goodbye
-
-- story: ask for OTP
+- story: số dư
   steps:
-    - intent: OTP
-    - action: utter_OTP
-
-- story: ask for stock news
-  steps:
-    - intent: Thông tin thị trường chứng khoán
-    - action: action_return_intent_and_entity
-    - intent: Inform_stock
+    - intent: số dư
     - action: action_return_intent_and_entity
 
+- story: zalo
+  steps:
+    - intent: zalo
+    - action: action_return_intent_and_entity
 
-- story: buy stock
-  steps: 
+- story: Đồng ý
+  steps:
+    - intent: Đồng ý
+    - action: action_return_intent_and_entity
+
+- story: các mã cổ phiếu đã mua
+  steps:
+    - intent: các mã cổ phiếu đã mua
+    - action: action_return_intent_and_entity
+
+- story: facebook
+  steps:
+    - intent: facebook
+    - action: action_return_intent_and_entity
+
+- story: check lệnh bán
+  steps:
+    - intent: check lệnh bán
+    - action: action_return_intent_and_entity
+
+- story: Đặt lệnh mua cổ phiếu trong phiên
+  steps:
     - intent: Đặt lệnh mua cổ phiếu trong phiên
     - action: action_return_intent_and_entity
-    - intent: Xác nhận mua cổ phiếu
-    - action: action_return_intent_and_entity
-    - intent: Thông tin các cổ phiếu đã mua
-    - action: action_return_intent_and_entity
 
-- story: ask policy info
-  steps: 
-    - intent: Thông tin chính sách
-    - action: action_return_intent_and_entity
-
-- story: ask work info
-  steps: 
-    - intent: Thông tin làm việc
-    - action: action_return_intent_and_entity
-
-- story: ask account info
+- story: hỏi tên đăng nhập
   steps:
-    - intent: Chao
-    - action: action_return_intent_and_entity
-    - intent: Thông tin tài khoản
-    - action: action_return_intent_and_entity
-    - intent: give_info
+    - intent: hỏi tên đăng nhập
     - action: action_return_intent_and_entity
 
-- story: normal path
+- story: Phí giao dịch
   steps:
-    - intent: Chao
-    - action: action_return_intent_and_entity
-    - intent: goodbye
+    - intent: Phí giao dịch
     - action: action_return_intent_and_entity
 
-- story: greet and ask model
+- story: phí bán
   steps:
-    - intent: ask_model
-    - action: action_predict
-    # - action: utter_model_response
-    # - slot_was_set:
-    #     - model_response: "Dự đoán từ MindsDB"
+    - intent: phí bán
+    - action: action_return_intent_and_entity
 
+- story: từ chối
+  steps:
+    - intent: từ chối
+    - action: action_return_intent_and_entity
 
-# - story: confirm place stock order
-#   steps:
-#     - intent: Xác nhận mua cổ phiếu
-#     - action: action_confirm_order
+- story: email
+  steps:
+    - intent: email
+    - action: action_return_intent_and_entity
+
+- story: Than
+  steps:
+    - intent: Than
+    - action: action_return_intent_and_entity
+
+- story: Giờ mở cửa, đóng cửa
+  steps:
+    - intent: Giờ mở cửa, đóng cửa
+    - action: action_return_intent_and_entity
+
+- story: messenger
+  steps:
+    - intent: messenger
+    - action: action_return_intent_and_entity
+
+- story: số điện thoại
+  steps:
+    - intent: số điện thoại
+    - action: action_return_intent_and_entity
+
+- story: biến động các cổ phiếu đã mua
+  steps:
+    - intent: biến động các cổ phiếu đã mua
+    - action: action_return_intent_and_entity
+
+- story: đặt lệnh bán
+  steps:
+    - intent: đặt lệnh bán
+    - action: action_return_intent_and_entity
+
+- story: không rõ
+  steps:
+    - intent: không rõ
+    - action: action_return_intent_and_entity
+
+- story: Chào
+  steps:
+    - intent: Chào
+    - action: action_return_intent_and_entity
+
+- story: OTP
+  steps:
+    - intent: OTP
+    - action: action_return_intent_and_entity
+
+- story: cổ phiếu bao giờ về
+  steps:
+    - intent: cổ phiếu bao giờ về
+    - action: action_return_intent_and_entity
+
+- story: truy vấn đã bán được bao nhiêu cổ phiếu
+  steps:
+    - intent: truy vấn đã bán được bao nhiêu cổ phiếu
+    - action: action_return_intent_and_entity
+
+- story: huỷ mua cổ phiếu
+  steps:
+    - intent: huỷ mua cổ phiếu
+    - action: action_return_intent_and_entity
+
+- story: tổng giá trị bán
+  steps:
+    - intent: tổng giá trị bán
+    - action: action_return_intent_and_entity
+
+- story: thuế bán
+  steps:
+    - intent: thuế bán
+    - action: action_return_intent_and_entity
+
+- story: lịch sử
+  steps:
+    - intent: lịch sử
+    - action: action_return_intent_and_entity
+
+- story: giao dịch phái sinh
+  steps:
+    - intent: giao dịch phái sinh
+    - action: action_return_intent_and_entity
+
+- story: Không phân loại
+  steps:
+    - intent: Không phân loại
+    - action: action_return_intent_and_entity
+
+- story: huỷ bán cổ phiếu
+  steps:
+    - intent: huỷ bán cổ phiếu
+    - action: action_return_intent_and_entity
+
+- story: lấy dữ liệu từ mindsDB
+  steps:
+    - intent: lấy dữ liệu
+    - action: action_get_data_from_mindsDB
