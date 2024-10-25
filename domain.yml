@@ -1,41 +1,39 @@
 version: '3.1'
 
 intents:
-  - số dư
-  - zalo
-  - Đồng ý
-  - các mã cổ phiếu đã mua
-  - facebook
-  - check lệnh bán
-  - Đặt lệnh mua cổ phiếu trong phiên
-  - hỏi tên đăng nhập
-  - Phí giao dịch
-  - phí bán
-  - từ chối
-  - email
-  - Than
-  - Giờ mở cửa, đóng cửa
-  - messenger
-  - số điện thoại
-  - biến động các cổ phiếu đã mua
-  - đặt lệnh bán
-  - không rõ
-  - Chào
-  - OTP
-  - cổ phiếu bao giờ về
-  - truy vấn đã bán được bao nhiêu cổ phiếu
-  - huỷ mua cổ phiếu
-  - tổng giá trị bán
-  - thuế bán
   - lịch sử
-  - giao dịch phái sinh
+  - Đặt lệnh mua cổ phiếu trong phiên
+  - biến động các cổ phiếu đã mua
+  - check lệnh bán
+  - truy vấn đã bán được bao nhiêu cổ phiếu
+  - cổ phiếu bao giờ về
+  - huỷ mua cổ phiếu
+  - Phí giao dịch
+  - Đồng ý
+  - tổng giá trị bán
   - Không phân loại
+  - giao dịch phái sinh
+  - Giờ mở cửa, đóng cửa
+  - email
+  - đặt lệnh bán
+  - hỏi tên đăng nhập
+  - zalo
+  - facebook
+  - số dư
+  - không rõ
+  - số điện thoại
+  - Than
+  - phí bán
+  - thuế bán
+  - các mã cổ phiếu đã mua
+  - messenger
   - huỷ bán cổ phiếu
+  - OTP
+  - từ chối
+  - Chào
   - lấy dữ liệu
 
 entities:
-  - price
-  - amount
   - time
   - stock_symbol
 

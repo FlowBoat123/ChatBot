@@ -1,34 +1,9 @@
 version: '3.1'
 
 stories:
-- story: số dư
+- story: lịch sử
   steps:
-    - intent: số dư
-    - action: action_return_intent_and_entity
-
-- story: zalo
-  steps:
-    - intent: zalo
-    - action: action_return_intent_and_entity
-
-- story: Đồng ý
-  steps:
-    - intent: Đồng ý
-    - action: action_return_intent_and_entity
-
-- story: các mã cổ phiếu đã mua
-  steps:
-    - intent: các mã cổ phiếu đã mua
-    - action: action_return_intent_and_entity
-
-- story: facebook
-  steps:
-    - intent: facebook
-    - action: action_return_intent_and_entity
-
-- story: check lệnh bán
-  steps:
-    - intent: check lệnh bán
+    - intent: lịch sử
     - action: action_return_intent_and_entity
 
 - story: Đặt lệnh mua cổ phiếu trong phiên
@@ -36,79 +11,14 @@ stories:
     - intent: Đặt lệnh mua cổ phiếu trong phiên
     - action: action_return_intent_and_entity
 
-- story: hỏi tên đăng nhập
-  steps:
-    - intent: hỏi tên đăng nhập
-    - action: action_return_intent_and_entity
-
-- story: Phí giao dịch
-  steps:
-    - intent: Phí giao dịch
-    - action: action_return_intent_and_entity
-
-- story: phí bán
-  steps:
-    - intent: phí bán
-    - action: action_return_intent_and_entity
-
-- story: từ chối
-  steps:
-    - intent: từ chối
-    - action: action_return_intent_and_entity
-
-- story: email
-  steps:
-    - intent: email
-    - action: action_return_intent_and_entity
-
-- story: Than
-  steps:
-    - intent: Than
-    - action: action_return_intent_and_entity
-
-- story: Giờ mở cửa, đóng cửa
-  steps:
-    - intent: Giờ mở cửa, đóng cửa
-    - action: action_return_intent_and_entity
-
-- story: messenger
-  steps:
-    - intent: messenger
-    - action: action_return_intent_and_entity
-
-- story: số điện thoại
-  steps:
-    - intent: số điện thoại
-    - action: action_return_intent_and_entity
-
 - story: biến động các cổ phiếu đã mua
   steps:
     - intent: biến động các cổ phiếu đã mua
     - action: action_return_intent_and_entity
 
-- story: đặt lệnh bán
+- story: check lệnh bán
   steps:
-    - intent: đặt lệnh bán
-    - action: action_return_intent_and_entity
-
-- story: không rõ
-  steps:
-    - intent: không rõ
-    - action: action_return_intent_and_entity
-
-- story: Chào
-  steps:
-    - intent: Chào
-    - action: action_return_intent_and_entity
-
-- story: OTP
-  steps:
-    - intent: OTP
-    - action: action_return_intent_and_entity
-
-- story: cổ phiếu bao giờ về
-  steps:
-    - intent: cổ phiếu bao giờ về
+    - intent: check lệnh bán
     - action: action_return_intent_and_entity
 
 - story: truy vấn đã bán được bao nhiêu cổ phiếu
@@ -116,9 +26,24 @@ stories:
     - intent: truy vấn đã bán được bao nhiêu cổ phiếu
     - action: action_return_intent_and_entity
 
+- story: cổ phiếu bao giờ về
+  steps:
+    - intent: cổ phiếu bao giờ về
+    - action: action_return_intent_and_entity
+
 - story: huỷ mua cổ phiếu
   steps:
     - intent: huỷ mua cổ phiếu
+    - action: action_return_intent_and_entity
+
+- story: Phí giao dịch
+  steps:
+    - intent: Phí giao dịch
+    - action: action_return_intent_and_entity
+
+- story: Đồng ý
+  steps:
+    - intent: Đồng ý
     - action: action_return_intent_and_entity
 
 - story: tổng giá trị bán
@@ -126,14 +51,9 @@ stories:
     - intent: tổng giá trị bán
     - action: action_return_intent_and_entity
 
-- story: thuế bán
+- story: Không phân loại
   steps:
-    - intent: thuế bán
-    - action: action_return_intent_and_entity
-
-- story: lịch sử
-  steps:
-    - intent: lịch sử
+    - intent: Không phân loại
     - action: action_return_intent_and_entity
 
 - story: giao dịch phái sinh
@@ -141,14 +61,94 @@ stories:
     - intent: giao dịch phái sinh
     - action: action_return_intent_and_entity
 
-- story: Không phân loại
+- story: Giờ mở cửa, đóng cửa
   steps:
-    - intent: Không phân loại
+    - intent: Giờ mở cửa, đóng cửa
+    - action: action_return_intent_and_entity
+
+- story: email
+  steps:
+    - intent: email
+    - action: action_return_intent_and_entity
+
+- story: đặt lệnh bán
+  steps:
+    - intent: đặt lệnh bán
+    - action: action_return_intent_and_entity
+
+- story: hỏi tên đăng nhập
+  steps:
+    - intent: hỏi tên đăng nhập
+    - action: action_return_intent_and_entity
+
+- story: zalo
+  steps:
+    - intent: zalo
+    - action: action_return_intent_and_entity
+
+- story: facebook
+  steps:
+    - intent: facebook
+    - action: action_return_intent_and_entity
+
+- story: số dư
+  steps:
+    - intent: số dư
+    - action: action_return_intent_and_entity
+
+- story: không rõ
+  steps:
+    - intent: không rõ
+    - action: action_return_intent_and_entity
+
+- story: số điện thoại
+  steps:
+    - intent: số điện thoại
+    - action: action_return_intent_and_entity
+
+- story: Than
+  steps:
+    - intent: Than
+    - action: action_return_intent_and_entity
+
+- story: phí bán
+  steps:
+    - intent: phí bán
+    - action: action_return_intent_and_entity
+
+- story: thuế bán
+  steps:
+    - intent: thuế bán
+    - action: action_return_intent_and_entity
+
+- story: các mã cổ phiếu đã mua
+  steps:
+    - intent: các mã cổ phiếu đã mua
+    - action: action_return_intent_and_entity
+
+- story: messenger
+  steps:
+    - intent: messenger
     - action: action_return_intent_and_entity
 
 - story: huỷ bán cổ phiếu
   steps:
     - intent: huỷ bán cổ phiếu
+    - action: action_return_intent_and_entity
+
+- story: OTP
+  steps:
+    - intent: OTP
+    - action: action_return_intent_and_entity
+
+- story: từ chối
+  steps:
+    - intent: từ chối
+    - action: action_return_intent_and_entity
+
+- story: Chào
+  steps:
+    - intent: Chào
     - action: action_return_intent_and_entity
 
 - story: lấy dữ liệu từ mindsDB
