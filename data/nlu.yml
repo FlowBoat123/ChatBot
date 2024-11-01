@@ -849,3 +849,4 @@ nlu:
 - intent: lấy dữ liệu
   examples: |
     - Lấy dữ liệu từ mindsDB
+    - lấy dữ liệu

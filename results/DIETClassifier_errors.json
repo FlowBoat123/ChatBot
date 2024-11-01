@@ -1,0 +1,29 @@
+[
+  {
+    "text": "Bạn giúp tôi đặt lệnh mua cổ phiếu MWG với giá thị trường trong phiên này nhé",
+    "entities": [
+      {
+        "start": 35,
+        "end": 38,
+        "value": "MWG",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 70,
+        "end": 73,
+        "value": "này",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 35,
+        "end": 38,
+        "confidence_entity": 0.9993898868560791,
+        "value": "MWG",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

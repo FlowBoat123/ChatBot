@@ -1,0 +1,162 @@
+[
+  {
+    "text": "Lấy dữ liệu từ mindsDB",
+    "intent": "lấy dữ liệu",
+    "intent_prediction": {
+      "name": "số dư",
+      "confidence": 0.9913516044616699
+    }
+  },
+  {
+    "text": "Chính xác, mua luôn.",
+    "intent": "Đồng ý",
+    "intent_prediction": {
+      "name": "Phí giao dịch",
+      "confidence": 0.42749500274658203
+    }
+  },
+  {
+    "text": "Không cần, bỏ qua giao dịch này.",
+    "intent": "từ chối",
+    "intent_prediction": {
+      "name": "Giờ mở cửa, đóng cửa",
+      "confidence": 0.9229074716567993
+    }
+  },
+  {
+    "text": "Hủy lệnh này đi.",
+    "intent": "từ chối",
+    "intent_prediction": {
+      "name": "huỷ mua cổ phiếu",
+      "confidence": 0.8119306564331055
+    }
+  },
+  {
+    "text": "Khi nào cổ phiếu VNM tôi đã bán sẽ được ghi nhận vào tài khoản?",
+    "intent": "truy vấn đã bán được bao nhiêu cổ phiếu",
+    "intent_prediction": {
+      "name": "cổ phiếu bao giờ về",
+      "confidence": 0.5409134030342102
+    }
+  },
+  {
+    "text": "Cổ phiếu Vingroup bán hôm nay về tài khoản ngày nào?",
+    "intent": "truy vấn đã bán được bao nhiêu cổ phiếu",
+    "intent_prediction": {
+      "name": "cổ phiếu bao giờ về",
+      "confidence": 0.9172017574310303
+    }
+  },
+  {
+    "text": "Khi nào cổ phiếu BID được ghi nhận vào tài khoản sau giao dịch?",
+    "intent": "truy vấn đã bán được bao nhiêu cổ phiếu",
+    "intent_prediction": {
+      "name": "cổ phiếu bao giờ về",
+      "confidence": 0.9995540976524353
+    }
+  },
+  {
+    "text": "Khi nào cổ phiếu BID của tôi sẽ được ghi nhận vào tài khoản sau giao dịch bán?",
+    "intent": "truy vấn đã bán được bao nhiêu cổ phiếu",
+    "intent_prediction": {
+      "name": "cổ phiếu bao giờ về",
+      "confidence": 0.98051917552948
+    }
+  },
+  {
+    "text": "Phí là?",
+    "intent": "phí bán",
+    "intent_prediction": {
+      "name": "Phí giao dịch",
+      "confidence": 0.7769848108291626
+    }
+  },
+  {
+    "text": "Phí?",
+    "intent": "phí bán",
+    "intent_prediction": {
+      "name": "Phí giao dịch",
+      "confidence": 0.7421982884407043
+    }
+  },
+  {
+    "text": "Hi!",
+    "intent": "Chào",
+    "intent_prediction": {
+      "name": "OTP",
+      "confidence": 0.3416978418827057
+    }
+  },
+  {
+    "text": "Hủy.",
+    "intent": "huỷ bán cổ phiếu",
+    "intent_prediction": {
+      "name": "huỷ mua cổ phiếu",
+      "confidence": 0.9449894428253174
+    }
+  },
+  {
+    "text": "BID về chưa?",
+    "intent": "cổ phiếu bao giờ về",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.9999246597290039
+    }
+  },
+  {
+    "text": "Cổ phiếu Vingroup tôi bán hôm nay sẽ về tài khoản vào ngày nào?",
+    "intent": "cổ phiếu bao giờ về",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.8728940486907959
+    }
+  },
+  {
+    "text": "Hủy cổ phiếu.",
+    "intent": "huỷ mua cổ phiếu",
+    "intent_prediction": {
+      "name": "huỷ bán cổ phiếu",
+      "confidence": 0.8692308664321899
+    }
+  },
+  {
+    "text": "Làm thế nào để tôi liên hệ với người môi giới để nhận tư vấn chi tiết hơn?",
+    "intent": "số điện thoại",
+    "intent_prediction": {
+      "name": "email",
+      "confidence": 0.7648880481719971
+    }
+  },
+  {
+    "text": "Khuyến mãi đặc biệt?",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "không rõ",
+      "confidence": 0.5301802754402161
+    }
+  },
+  {
+    "text": "Tôi muốn tìm hiểu về các loại hình đầu tư tài chính khác nhau.",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "Phí giao dịch",
+      "confidence": 0.9802998304367065
+    }
+  },
+  {
+    "text": "Nhà hàng gần đây?",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "số điện thoại",
+      "confidence": 0.9948541522026062
+    }
+  },
+  {
+    "text": "Quà tặng cho bạn bè?",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "OTP",
+      "confidence": 0.32363834977149963
+    }
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "amount": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 12,
+    "confused_with": {}
+  },
+  "time": {
+    "precision": 1.0,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.9090909090909091,
+    "support": 6,
+    "confused_with": {}
+  },
+  "stock_symbol": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 24,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 1.0,
+    "recall": 0.9761904761904762,
+    "f1-score": 0.9879518072289156,
+    "support": 42
+  },
+  "macro avg": {
+    "precision": 1.0,
+    "recall": 0.9444444444444445,
+    "f1-score": 0.9696969696969697,
+    "support": 42
+  },
+  "weighted avg": {
+    "precision": 1.0,
+    "recall": 0.9761904761904762,
+    "f1-score": 0.987012987012987,
+    "support": 42
+  },
+  "accuracy": 0.9992800575953924
+}
