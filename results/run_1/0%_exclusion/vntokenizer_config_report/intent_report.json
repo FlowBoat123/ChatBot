@@ -1,0 +1,290 @@
+{
+  "Chào": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 4,
+    "confused_with": {
+      "Không phân loại": 2,
+      "truy vấn đã bán được bao nhiêu cổ phiếu": 1,
+      "cổ phiếu bao giờ về": 1
+    }
+  },
+  "Không phân loại": {
+    "precision": 0.8888888888888888,
+    "recall": 0.9230769230769231,
+    "f1-score": 0.9056603773584906,
+    "support": 26,
+    "confused_with": {
+      "số điện thoại": 2
+    }
+  },
+  "Đặt lệnh mua cổ phiếu trong phiên": {
+    "precision": 0.2727272727272727,
+    "recall": 1.0,
+    "f1-score": 0.42857142857142855,
+    "support": 3,
+    "confused_with": {}
+  },
+  "không rõ": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "Đặt lệnh mua cổ phiếu trong phiên": 1,
+      "facebook": 1
+    }
+  },
+  "check lệnh bán": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 4,
+    "confused_with": {
+      "Đặt lệnh mua cổ phiếu trong phiên": 3,
+      "tổng giá trị bán": 1
+    }
+  },
+  "OTP": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "hỏi tên đăng nhập": 3
+    }
+  },
+  "các mã cổ phiếu đã mua": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "truy vấn đã bán được bao nhiêu cổ phiếu": 2,
+      "biến động các cổ phiếu đã mua": 1
+    }
+  },
+  "thuế bán": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "đặt lệnh bán": 3
+    }
+  },
+  "huỷ mua cổ phiếu": {
+    "precision": 0.6,
+    "recall": 0.75,
+    "f1-score": 0.6666666666666665,
+    "support": 4,
+    "confused_with": {
+      "Đặt lệnh mua cổ phiếu trong phiên": 1
+    }
+  },
+  "cổ phiếu bao giờ về": {
+    "precision": 0.5714285714285714,
+    "recall": 1.0,
+    "f1-score": 0.7272727272727273,
+    "support": 4,
+    "confused_with": {}
+  },
+  "hỏi tên đăng nhập": {
+    "precision": 0.16666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.2857142857142857,
+    "support": 1,
+    "confused_with": {}
+  },
+  "số điện thoại": {
+    "precision": 0.2,
+    "recall": 1.0,
+    "f1-score": 0.33333333333333337,
+    "support": 4,
+    "confused_with": {}
+  },
+  "truy vấn đã bán được bao nhiêu cổ phiếu": {
+    "precision": 0.25,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.28571428571428575,
+    "support": 3,
+    "confused_with": {
+      "cổ phiếu bao giờ về": 2
+    }
+  },
+  "lịch sử": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "Giờ mở cửa, đóng cửa": 2,
+      "đặt lệnh bán": 1
+    }
+  },
+  "Đồng ý": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "Đặt lệnh mua cổ phiếu trong phiên": 1,
+      "giao dịch phái sinh": 1
+    }
+  },
+  "phí bán": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "đặt lệnh bán": 2,
+      "tổng giá trị bán": 1
+    }
+  },
+  "zalo": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "số điện thoại": 3
+    }
+  },
+  "đặt lệnh bán": {
+    "precision": 0.4,
+    "recall": 0.8,
+    "f1-score": 0.5333333333333333,
+    "support": 5,
+    "confused_with": {
+      "Đặt lệnh mua cổ phiếu trong phiên": 1
+    }
+  },
+  "messenger": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "hỏi tên đăng nhập": 2,
+      "số điện thoại": 1
+    }
+  },
+  "facebook": {
+    "precision": 0.5,
+    "recall": 0.25,
+    "f1-score": 0.3333333333333333,
+    "support": 4,
+    "confused_with": {
+      "số điện thoại": 3
+    }
+  },
+  "email": {
+    "precision": 1.0,
+    "recall": 0.25,
+    "f1-score": 0.4,
+    "support": 4,
+    "confused_with": {
+      "số điện thoại": 3
+    }
+  },
+  "Giờ mở cửa, đóng cửa": {
+    "precision": 0.4444444444444444,
+    "recall": 1.0,
+    "f1-score": 0.6153846153846153,
+    "support": 4,
+    "confused_with": {}
+  },
+  "tổng giá trị bán": {
+    "precision": 0.3333333333333333,
+    "recall": 0.5,
+    "f1-score": 0.4,
+    "support": 2,
+    "confused_with": {
+      "số điện thoại": 1
+    }
+  },
+  "huỷ bán cổ phiếu": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "huỷ mua cổ phiếu": 2,
+      "Đặt lệnh mua cổ phiếu trong phiên": 1
+    }
+  },
+  "Than": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 4,
+    "confused_with": {
+      "Giờ mở cửa, đóng cửa": 2,
+      "Không phân loại": 1,
+      "biến động các cổ phiếu đã mua": 1
+    }
+  },
+  "Phí giao dịch": {
+    "precision": 1.0,
+    "recall": 0.25,
+    "f1-score": 0.4,
+    "support": 4,
+    "confused_with": {
+      "Giờ mở cửa, đóng cửa": 1,
+      "biến động các cổ phiếu đã mua": 1
+    }
+  },
+  "số dư": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "số điện thoại": 3
+    }
+  },
+  "giao dịch phái sinh": {
+    "precision": 0.5714285714285714,
+    "recall": 1.0,
+    "f1-score": 0.7272727272727273,
+    "support": 4,
+    "confused_with": {}
+  },
+  "biến động các cổ phiếu đã mua": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1-score": 0.6666666666666666,
+    "support": 3,
+    "confused_with": {}
+  },
+  "từ chối": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "giao dịch phái sinh": 1
+    }
+  },
+  "accuracy": 0.4957983193277311,
+  "macro avg": {
+    "precision": 0.25663059163059165,
+    "recall": 0.36854700854700856,
+    "f1-score": 0.2569641260207298,
+    "support": 119
+  },
+  "weighted avg": {
+    "precision": 0.40808262699019,
+    "recall": 0.4957983193277311,
+    "f1-score": 0.40550807999674343,
+    "support": 119
+  },
+  "micro avg": {
+    "precision": 0.4957983193277311,
+    "recall": 0.4957983193277311,
+    "f1-score": 0.4957983193277311,
+    "support": 119
+  }
+}

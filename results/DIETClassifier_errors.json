@@ -1,27 +1,1979 @@
 [
   {
-    "text": "Bạn giúp tôi đặt lệnh mua cổ phiếu MWG với giá thị trường trong phiên này nhé",
+    "text": "Tôi muốn biết tình hình thị trường chứng khoán hôm nay thế nào?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 47,
+        "end": 50,
+        "confidence_entity": 0.6926185488700867,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn có thể cung cấp thông tin về thị trường chứng khoán vào ngày hôm qua không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 65,
+        "end": 68,
+        "confidence_entity": 0.6574177742004395,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tình hình thị trường chứng khoán hôm nay ra sao rồi?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 33,
+        "end": 36,
+        "confidence_entity": 0.5908327102661133,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi muốn kiểm tra thị trường chứng khoán đã diễn ra thế nào vào ngày hôm qua.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 69,
+        "end": 76,
+        "confidence_entity": 0.5952087044715881,
+        "value": "hôm qua",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn có thể cập nhật cho tôi về tình hình thị trường chứng khoán hôm nay được không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 64,
+        "end": 67,
+        "confidence_entity": 0.6368370056152344,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Xin hãy cho tôi biết thông tin về diễn biến thị trường chứng khoán hôm qua.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 67,
+        "end": 74,
+        "confidence_entity": 0.5026586651802063,
+        "value": "hôm qua",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cập nhật thị trường chứng khoán hôm nay thế nào?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 32,
+        "end": 35,
+        "confidence_entity": 0.6536938548088074,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Thị trường hôm qua biến động ra sao?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.5929965972900391,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Diễn biến thị trường hôm nay ra sao?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 21,
+        "end": 24,
+        "confidence_entity": 0.6100117564201355,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tình hình thị trường hôm qua thế nào?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 21,
+        "end": 24,
+        "confidence_entity": 0.601444661617279,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cung cấp thông tin về thị trường hôm nay?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 33,
+        "end": 40,
+        "confidence_entity": 0.5561684370040894,
+        "value": "hôm nay",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Kiểm tra thông tin thị trường chứng khoán hôm qua.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 42,
+        "end": 49,
+        "confidence_entity": 0.5323576927185059,
+        "value": "hôm qua",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Thông tin thị trường chứng khoán hôm qua?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 33,
+        "end": 36,
+        "confidence_entity": 0.6674975156784058,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Thị trường hôm nay?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.5938788056373596,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hôm qua thế nào?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.7455518841743469,
+        "value": "Hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Thông tin hôm nay.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 10,
+        "end": 13,
+        "confidence_entity": 0.6483182311058044,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi muốn biết mức phí giao dịch hiện tại của công ty là bao nhiêu?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 45,
+        "end": 52,
+        "confidence_entity": 0.8313031792640686,
+        "value": "công ty",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn có thể cho tôi biết giờ mở cửa thị trường chứng khoán hôm nay không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 58,
+        "end": 61,
+        "confidence_entity": 0.6422742605209351,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Thị trường chứng khoán hôm nay mở cửa vào lúc mấy giờ?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 23,
+        "end": 26,
+        "confidence_entity": 0.6118270754814148,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Giờ mở cửa thị trường hôm nay?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 22,
+        "end": 29,
+        "confidence_entity": 0.5227632522583008,
+        "value": "hôm nay",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Thị trường chứng khoán hôm nay mở cửa mấy giờ?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 23,
+        "end": 26,
+        "confidence_entity": 0.6059750914573669,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Giờ mở hôm nay?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 7,
+        "end": 10,
+        "confidence_entity": 0.6211769580841064,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Không cần, bỏ qua giao dịch này.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 28,
+        "end": 31,
+        "confidence_entity": 0.9500680565834045,
+        "value": "này",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hủy lệnh này đi.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 9,
+        "end": 12,
+        "confidence_entity": 0.9093499779701233,
+        "value": "này",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn có thể giúp tôi đặt lệnh mua 200 cổ phiếu của FPT ngay bây giờ được không?",
     "entities": [
       {
-        "start": 35,
-        "end": 38,
-        "value": "MWG",
+        "start": 33,
+        "end": 36,
+        "value": "200",
+        "entity": "amount"
+      },
+      {
+        "start": 50,
+        "end": 53,
+        "value": "FPT",
         "entity": "stock_symbol"
       },
       {
-        "start": 70,
-        "end": 73,
-        "value": "này",
+        "start": 59,
+        "end": 66,
+        "value": "bây giờ",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 33,
+        "end": 36,
+        "confidence_entity": 0.9970276355743408,
+        "value": "200",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "stock_symbol",
+        "start": 50,
+        "end": 53,
+        "confidence_entity": 0.9956429600715637,
+        "value": "FPT",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Làm ơn đặt lệnh mua 50 cổ phiếu của Vietcombank trong phiên hôm nay",
+    "entities": [
+      {
+        "start": 20,
+        "end": 22,
+        "value": "50",
+        "entity": "amount"
+      },
+      {
+        "start": 36,
+        "end": 47,
+        "value": "Vietcombank",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 60,
+        "end": 67,
+        "value": "hôm nay",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 20,
+        "end": 22,
+        "confidence_entity": 0.997294008731842,
+        "value": "50",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "time",
+        "start": 60,
+        "end": 67,
+        "confidence_entity": 0.7076565623283386,
+        "value": "hôm nay",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi cần đặt lệnh mua cổ phiếu TCB với giá 50.000 VND/cổ phiếu trong phiên hiện tại",
+    "entities": [
+      {
+        "start": 30,
+        "end": 33,
+        "value": "TCB",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 42,
+        "end": 48,
+        "value": "50.000",
+        "entity": "price"
+      },
+      {
+        "start": 74,
+        "end": 82,
+        "value": "hiện tại",
         "entity": "time"
       }
     ],
     "predicted_entities": [
       {
         "entity": "stock_symbol",
+        "start": 30,
+        "end": 33,
+        "confidence_entity": 0.9949960708618164,
+        "value": "TCB",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount",
+        "start": 42,
+        "end": 48,
+        "confidence_entity": 0.9967420101165771,
+        "value": "50.000",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn có thể đặt lệnh mua cho tôi 200 cổ phiếu VNM ngay lúc này không?",
+    "entities": [
+      {
+        "start": 32,
+        "end": 35,
+        "value": "200",
+        "entity": "amount"
+      },
+      {
+        "start": 45,
+        "end": 48,
+        "value": "VNM",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 58,
+        "end": 61,
+        "value": "này",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 32,
+        "end": 35,
+        "confidence_entity": 0.9970472455024719,
+        "value": "200",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "time",
+        "start": 58,
+        "end": 61,
+        "confidence_entity": 0.9576687812805176,
+        "value": "này",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Đặt lệnh mua 50 cổ phiếu Vietcombank trong phiên này",
+    "entities": [
+      {
+        "start": 13,
+        "end": 15,
+        "value": "50",
+        "entity": "amount"
+      },
+      {
+        "start": 25,
+        "end": 36,
+        "value": "Vietcombank",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 49,
+        "end": 52,
+        "value": "này",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 13,
+        "end": 15,
+        "confidence_entity": 0.9976945519447327,
+        "value": "50",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "time",
+        "start": 49,
+        "end": 52,
+        "confidence_entity": 0.9618379473686218,
+        "value": "này",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Đặt lệnh mua cổ phiếu TCB với giá 50.000 VND/cổ phiếu",
+    "entities": [
+      {
+        "start": 22,
+        "end": 25,
+        "value": "TCB",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 34,
+        "end": 40,
+        "value": "50.000",
+        "entity": "price"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 22,
+        "end": 25,
+        "confidence_entity": 0.995521605014801,
+        "value": "TCB",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "amount",
+        "start": 34,
+        "end": 40,
+        "confidence_entity": 0.9968386292457581,
+        "value": "50.000",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Mua BID 150 cổ",
+    "entities": [
+      {
+        "start": 4,
+        "end": 7,
+        "value": "BID",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 8,
+        "end": 11,
+        "value": "150",
+        "entity": "amount"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 8,
+        "end": 11,
+        "confidence_entity": 0.9977613091468811,
+        "value": "150",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Mua 200 cổ VNM",
+    "entities": [
+      {
+        "start": 4,
+        "end": 7,
+        "value": "200",
+        "entity": "amount"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "VNM",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 4,
+        "end": 7,
+        "confidence_entity": 0.997708261013031,
+        "value": "200",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Mua 100 cổ MSN",
+    "entities": [
+      {
+        "start": 4,
+        "end": 7,
+        "value": "100",
+        "entity": "amount"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "MSN",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 4,
+        "end": 7,
+        "confidence_entity": 0.9977191686630249,
+        "value": "100",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn có thể giúp tôi bán 200 cổ phiếu của FPT ngay bây giờ được không?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 27,
+        "value": "200",
+        "entity": "amount"
+      },
+      {
+        "start": 41,
+        "end": 44,
+        "value": "FPT",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 50,
+        "end": 57,
+        "value": "bây giờ",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 24,
+        "end": 27,
+        "confidence_entity": 0.9970766305923462,
+        "value": "200",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "stock_symbol",
+        "start": 41,
+        "end": 44,
+        "confidence_entity": 0.9964441061019897,
+        "value": "FPT",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Làm ơn bán 50 cổ phiếu của Vietcombank giúp tôi",
+    "entities": [
+      {
+        "start": 11,
+        "end": 13,
+        "value": "50",
+        "entity": "amount"
+      },
+      {
+        "start": 27,
+        "end": 38,
+        "value": "Vietcombank",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 11,
+        "end": 13,
+        "confidence_entity": 0.9976447224617004,
+        "value": "50",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn giúp tôi bán 150 cổ phiếu của MWG với giá hiện tại",
+    "entities": [
+      {
+        "start": 17,
+        "end": 20,
+        "value": "150",
+        "entity": "amount"
+      },
+      {
+        "start": 34,
+        "end": 37,
+        "value": "MWG",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 46,
+        "end": 54,
+        "value": "hiện tại",
+        "entity": "price"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 17,
+        "end": 20,
+        "confidence_entity": 0.9974722862243652,
+        "value": "150",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "stock_symbol",
+        "start": 34,
+        "end": 37,
+        "confidence_entity": 0.9965404272079468,
+        "value": "MWG",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi cần bán 500 cổ phiếu của HPG ngay bây giờ",
+    "entities": [
+      {
+        "start": 12,
+        "end": 15,
+        "value": "500",
+        "entity": "amount"
+      },
+      {
+        "start": 29,
+        "end": 32,
+        "value": "HPG",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 38,
+        "end": 45,
+        "value": "bây giờ",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 12,
+        "end": 15,
+        "confidence_entity": 0.9976442456245422,
+        "value": "500",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "stock_symbol",
+        "start": 29,
+        "end": 32,
+        "confidence_entity": 0.9938748478889465,
+        "value": "HPG",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn có thể bán 150 cổ phiếu của BID giúp tôi trong phiên này không?",
+    "entities": [
+      {
+        "start": 15,
+        "end": 18,
+        "value": "150",
+        "entity": "amount"
+      },
+      {
+        "start": 32,
+        "end": 35,
+        "value": "BID",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 57,
+        "end": 60,
+        "value": "này",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 15,
+        "end": 18,
+        "confidence_entity": 0.9974594116210938,
+        "value": "150",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "time",
+        "start": 57,
+        "end": 60,
+        "confidence_entity": 0.9566680192947388,
+        "value": "này",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bán 50 cổ phiếu Vietcombank",
+    "entities": [
+      {
+        "start": 4,
+        "end": 6,
+        "value": "50",
+        "entity": "amount"
+      },
+      {
+        "start": 16,
+        "end": 27,
+        "value": "Vietcombank",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 4,
+        "end": 6,
+        "confidence_entity": 0.997656524181366,
+        "value": "50",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bán 150 cổ phiếu BID",
+    "entities": [
+      {
+        "start": 4,
+        "end": 7,
+        "value": "150",
+        "entity": "amount"
+      },
+      {
+        "start": 17,
+        "end": 20,
+        "value": "BID",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 4,
+        "end": 7,
+        "confidence_entity": 0.9976546168327332,
+        "value": "150",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bán 100 cổ phiếu VNM",
+    "entities": [
+      {
+        "start": 4,
+        "end": 7,
+        "value": "100",
+        "entity": "amount"
+      },
+      {
+        "start": 17,
+        "end": 20,
+        "value": "VNM",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 4,
+        "end": 7,
+        "confidence_entity": 0.9976503252983093,
+        "value": "100",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bán 100 Vinamilk",
+    "entities": [
+      {
+        "start": 4,
+        "end": 7,
+        "value": "100",
+        "entity": "amount"
+      },
+      {
+        "start": 8,
+        "end": 16,
+        "value": "Vinamilk",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 4,
+        "end": 16,
+        "confidence_entity": 0.6683564782142639,
+        "value": "100 Vinamilk",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bán 150 BID",
+    "entities": [
+      {
+        "start": 4,
+        "end": 7,
+        "value": "150",
+        "entity": "amount"
+      },
+      {
+        "start": 8,
+        "end": 11,
+        "value": "BID",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 4,
+        "end": 7,
+        "confidence_entity": 0.9975332617759705,
+        "value": "150",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bán 100 VNM",
+    "entities": [
+      {
+        "start": 4,
+        "end": 7,
+        "value": "100",
+        "entity": "amount"
+      },
+      {
+        "start": 8,
+        "end": 11,
+        "value": "VNM",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 4,
+        "end": 7,
+        "confidence_entity": 0.9975360035896301,
+        "value": "100",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bán 100 MSN",
+    "entities": [
+      {
+        "start": 4,
+        "end": 7,
+        "value": "100",
+        "entity": "amount"
+      },
+      {
+        "start": 8,
+        "end": 11,
+        "value": "MSN",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 4,
+        "end": 7,
+        "confidence_entity": 0.997551441192627,
+        "value": "100",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi đã bán 50 cổ phiếu Vietcombank, bạn có thể cho tôi biết kết quả không?",
+    "entities": [
+      {
+        "start": 11,
+        "end": 13,
+        "value": "50",
+        "entity": "amount"
+      },
+      {
+        "start": 23,
+        "end": 34,
+        "value": "Vietcombank",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 11,
+        "end": 13,
+        "confidence_entity": 0.997617244720459,
+        "value": "50",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn có thể kiểm tra giúp tôi xem lệnh bán 100 cổ phiếu VNM đã được xử lý chưa?",
+    "entities": [
+      {
+        "start": 42,
+        "end": 45,
+        "value": "100",
+        "entity": "amount"
+      },
+      {
+        "start": 55,
+        "end": 58,
+        "value": "VNM",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 42,
+        "end": 45,
+        "confidence_entity": 0.9968326091766357,
+        "value": "100",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Đã bán 50 cổ phiếu Vietcombank chưa?",
+    "entities": [
+      {
+        "start": 7,
+        "end": 9,
+        "value": "50",
+        "entity": "amount"
+      },
+      {
+        "start": 19,
+        "end": 30,
+        "value": "Vietcombank",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 7,
+        "end": 9,
+        "confidence_entity": 0.9977551102638245,
+        "value": "50",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Lệnh bán 100 cổ phiếu VNM đã xử lý chưa?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 12,
+        "value": "100",
+        "entity": "amount"
+      },
+      {
+        "start": 22,
+        "end": 25,
+        "value": "VNM",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 9,
+        "end": 12,
+        "confidence_entity": 0.997715413570404,
+        "value": "100",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "300 VIC đã khớp chưa?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "300",
+        "entity": "amount"
+      },
+      {
+        "start": 4,
+        "end": 7,
+        "value": "VIC",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.996731698513031,
+        "value": "300",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "150 BID đã bán chưa?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "150",
+        "entity": "amount"
+      },
+      {
+        "start": 4,
+        "end": 7,
+        "value": "BID",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9967223405838013,
+        "value": "150",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Khi nào thì cổ phiếu FPT tôi vừa mua hôm qua sẽ được ghi nhận vào tài khoản?",
+    "entities": [
+      {
+        "start": 21,
+        "end": 24,
+        "value": "FPT",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 37,
+        "end": 44,
+        "value": "hôm qua",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 21,
+        "end": 24,
+        "confidence_entity": 0.9966879487037659,
+        "value": "FPT",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "time",
+        "start": 37,
+        "end": 40,
+        "confidence_entity": 0.7938953638076782,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Khi nào cổ phiếu BID của tôi sẽ được ghi nhận vào tài khoản sau giao dịch bán?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 20,
+        "value": "BID",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tôi muốn biết cổ phiếu Vietcombank mà tôi đã mua sẽ về tài khoản vào ngày nào?",
+    "entities": [
+      {
+        "start": 23,
+        "end": 34,
+        "value": "Vietcombank",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Khi nào cổ phiếu VNM tôi đã bán sẽ được ghi nhận vào tài khoản?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 20,
+        "value": "VNM",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Cổ phiếu hôm nay mua khi nào về tài khoản?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 16,
+        "value": "hôm nay",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 9,
+        "end": 12,
+        "confidence_entity": 0.6592392921447754,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Khi nào cổ phiếu BID được ghi nhận vào tài khoản sau giao dịch?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 20,
+        "value": "BID",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "BID về chưa?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "BID",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "VNM khi nào có?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "VNM",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Khi nào thì cổ phiếu FPT tôi vừa mua hôm qua sẽ được ghi nhận vào tài khoản?",
+    "entities": [
+      {
+        "start": 21,
+        "end": 24,
+        "value": "FPT",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 37,
+        "end": 44,
+        "value": "hôm qua",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 21,
+        "end": 24,
+        "confidence_entity": 0.9966879487037659,
+        "value": "FPT",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "time",
+        "start": 37,
+        "end": 40,
+        "confidence_entity": 0.7938953638076782,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi muốn biết cổ phiếu TCB tôi mua hôm nay sẽ về tài khoản vào lúc nào?",
+    "entities": [
+      {
+        "start": 23,
+        "end": 26,
+        "value": "TCB",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 35,
+        "end": 42,
+        "value": "hôm nay",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 23,
+        "end": 26,
+        "confidence_entity": 0.9948360919952393,
+        "value": "TCB",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "time",
         "start": 35,
         "end": 38,
-        "confidence_entity": 0.9993898868560791,
-        "value": "MWG",
+        "confidence_entity": 0.7677576541900635,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Khi nào cổ phiếu BID của tôi sẽ được ghi nhận vào tài khoản sau giao dịch bán?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 20,
+        "value": "BID",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Khi nào cổ phiếu VNM tôi đã bán sẽ được ghi nhận vào tài khoản?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 20,
+        "value": "VNM",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Cổ phiếu FPT hôm qua mua khi nào được ghi nhận?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 12,
+        "value": "FPT",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 13,
+        "end": 20,
+        "value": "hôm qua",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 9,
+        "end": 12,
+        "confidence_entity": 0.9967942237854004,
+        "value": "FPT",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "time",
+        "start": 13,
+        "end": 16,
+        "confidence_entity": 0.7293904423713684,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cổ phiếu TCB hôm nay mua về tài khoản lúc nào?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 12,
+        "value": "TCB",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 13,
+        "end": 20,
+        "value": "hôm nay",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 9,
+        "end": 12,
+        "confidence_entity": 0.9955517649650574,
+        "value": "TCB",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "time",
+        "start": 13,
+        "end": 16,
+        "confidence_entity": 0.7126128673553467,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Khi nào cổ phiếu BID được ghi nhận vào tài khoản sau giao dịch?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 20,
+        "value": "BID",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Cổ phiếu Vietcombank mua về tài khoản ngày nào?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 20,
+        "value": "Vietcombank",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Cổ phiếu VNM bán khi nào về tài khoản?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 12,
+        "value": "VNM",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "BID về chưa?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "BID",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "VNM khi nào có?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "VNM",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tôi yêu cầu lệnh mua cổ phiếu này được hủy.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 30,
+        "end": 33,
+        "confidence_entity": 0.906080424785614,
+        "value": "này",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi cần hủy lệnh mua cổ phiếu này ngay lập tức.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 30,
+        "end": 33,
+        "confidence_entity": 0.9034907817840576,
+        "value": "này",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hủy lệnh mua cổ phiếu này.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 22,
+        "end": 25,
+        "confidence_entity": 0.9459347724914551,
+        "value": "này",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hủy lệnh mua này ngay lập tức.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 13,
+        "end": 16,
+        "confidence_entity": 0.9016821384429932,
+        "value": "này",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Lệnh mua này phải được hủy.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 9,
+        "end": 12,
+        "confidence_entity": 0.9127784371376038,
+        "value": "này",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Xin chào chatbot, tôi hy vọng bạn có thể giúp tôi giải quyết vấn đề này.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 68,
+        "end": 71,
+        "confidence_entity": 0.9650856852531433,
+        "value": "này",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi muốn biết thời tiết hôm nay như thế nào?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 24,
+        "end": 27,
+        "confidence_entity": 0.6640805602073669,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn có biết cách nấu món ăn này không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 28,
+        "end": 31,
+        "confidence_entity": 0.9020984172821045,
+        "value": "này",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Có tin tức gì nổi bật trong tuần này không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 33,
+        "end": 36,
+        "confidence_entity": 0.9122208952903748,
+        "value": "này",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi cần biết thông tin về các trường đại học ở thành phố này.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 57,
+        "end": 60,
+        "confidence_entity": 0.9640042781829834,
+        "value": "này",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi cần tìm một người dạy kèm cho môn học này.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 42,
+        "end": 45,
+        "confidence_entity": 0.9560168385505676,
+        "value": "này",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn có thể giúp tôi tìm một công thức làm món ăn mới không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 28,
+        "end": 32,
+        "confidence_entity": 0.9751971364021301,
+        "value": "công",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi cần biết cách sử dụng các công cụ phần mềm văn phòng.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 30,
+        "end": 34,
+        "confidence_entity": 0.9760922789573669,
+        "value": "công",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi muốn tìm hiểu về các công ty khởi nghiệp trong lĩnh vực công nghệ.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 25,
+        "end": 32,
+        "confidence_entity": 0.8787073493003845,
+        "value": "công ty",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "stock_symbol",
+        "start": 60,
+        "end": 64,
+        "confidence_entity": 0.9763323068618774,
+        "value": "công",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi cần một số gợi ý để tổ chức một bữa tiệc thành công.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 51,
+        "end": 55,
+        "confidence_entity": 0.9780400991439819,
+        "value": "công",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Có thông tin gì về các công ty hoạt động trong lĩnh vực giáo dục không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 23,
+        "end": 30,
+        "confidence_entity": 0.8491368889808655,
+        "value": "công ty",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn có thể giúp tôi tìm một công việc bán thời gian không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 28,
+        "end": 32,
+        "confidence_entity": 0.9767590761184692,
+        "value": "công",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi muốn biết cách tổ chức một sự kiện thành công.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 45,
+        "end": 49,
+        "confidence_entity": 0.9823147058486938,
+        "value": "công",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi cần tìm hiểu về các công ty cung cấp dịch vụ cloud computing.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 24,
+        "end": 31,
+        "confidence_entity": 0.8524450659751892,
+        "value": "công ty",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi muốn tìm hiểu về các công nghệ mới trong lĩnh vực AI.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 25,
+        "end": 29,
+        "confidence_entity": 0.9762671589851379,
+        "value": "công",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi muốn tìm hiểu về các công ty cung cấp dịch vụ hosting.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 25,
+        "end": 32,
+        "confidence_entity": 0.8580024838447571,
+        "value": "công ty",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi muốn tìm hiểu về các công ty cung cấp dịch vụ lập trình.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 25,
+        "end": 32,
+        "confidence_entity": 0.8540652990341187,
+        "value": "công ty",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Thời tiết hôm nay?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 10,
+        "end": 13,
+        "confidence_entity": 0.6268602609634399,
+        "value": "hôm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tin tức công nghệ?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 8,
+        "end": 12,
+        "confidence_entity": 0.9841550588607788,
+        "value": "công",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hủy giao dịch bán cổ phiếu này cho tôi ngay lập tức.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 27,
+        "end": 30,
+        "confidence_entity": 0.8900018930435181,
+        "value": "này",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hủy lệnh bán cổ phiếu này ngay bây giờ.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 22,
+        "end": 25,
+        "confidence_entity": 0.8856726884841919,
+        "value": "này",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi yêu cầu lệnh bán cổ phiếu này được hủy.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 30,
+        "end": 33,
+        "confidence_entity": 0.904272198677063,
+        "value": "này",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi quyết định hủy lệnh bán cổ phiếu này.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 37,
+        "end": 40,
+        "confidence_entity": 0.9537411332130432,
+        "value": "này",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hủy lệnh bán cổ phiếu này.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 22,
+        "end": 25,
+        "confidence_entity": 0.944186270236969,
+        "value": "này",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hủy lệnh bán này ngay lập tức.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 13,
+        "end": 16,
+        "confidence_entity": 0.8986267447471619,
+        "value": "này",
         "extractor": "DIETClassifier"
       }
     ]

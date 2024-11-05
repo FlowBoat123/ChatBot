@@ -36,6 +36,8 @@ intents:
 entities:
   - time
   - stock_symbol
+  - amount
+  - price
 
 actions:
   - action_return_intent_and_entity

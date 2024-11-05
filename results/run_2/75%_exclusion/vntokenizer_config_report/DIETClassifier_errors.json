@@ -1,0 +1,224 @@
+[
+  {
+    "text": "VNM khi nào có?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "VNM",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Bạn có thể đặt lệnh mua cho tôi 200 cổ phiếu VNM ngay lúc này không?",
+    "entities": [
+      {
+        "start": 32,
+        "end": 35,
+        "value": "200",
+        "entity": "amount"
+      },
+      {
+        "start": 45,
+        "end": 48,
+        "value": "VNM",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 58,
+        "end": 61,
+        "value": "này",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 32,
+        "end": 35,
+        "confidence_entity": 0.9578938484191895,
+        "value": "200",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn giúp tôi đặt lệnh mua cổ phiếu MWG với giá thị trường trong phiên này nhé",
+    "entities": [
+      {
+        "start": 35,
+        "end": 38,
+        "value": "MWG",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 70,
+        "end": 73,
+        "value": "này",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 35,
+        "end": 38,
+        "confidence_entity": 0.578943133354187,
+        "value": "MWG",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi muốn biết cổ phiếu FPT tôi mua hôm nay sẽ về tài khoản vào ngày nào?",
+    "entities": [
+      {
+        "start": 23,
+        "end": 26,
+        "value": "FPT",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 35,
+        "end": 42,
+        "value": "hôm nay",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 23,
+        "end": 26,
+        "confidence_entity": 0.5092028975486755,
+        "value": "FPT",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn có thể giúp tôi bán 200 cổ phiếu của FPT ngay bây giờ được không?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 27,
+        "value": "200",
+        "entity": "amount"
+      },
+      {
+        "start": 41,
+        "end": 44,
+        "value": "FPT",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 50,
+        "end": 57,
+        "value": "bây giờ",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 24,
+        "end": 27,
+        "confidence_entity": 0.9610893726348877,
+        "value": "200",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "stock_symbol",
+        "start": 41,
+        "end": 44,
+        "confidence_entity": 0.5301746129989624,
+        "value": "FPT",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi muốn bán 300 cổ phiếu của Vingroup trong phiên giao dịch này",
+    "entities": [
+      {
+        "start": 13,
+        "end": 16,
+        "value": "300",
+        "entity": "amount"
+      },
+      {
+        "start": 30,
+        "end": 38,
+        "value": "Vingroup",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 61,
+        "end": 64,
+        "value": "này",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 13,
+        "end": 16,
+        "confidence_entity": 0.9668219089508057,
+        "value": "300",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "stock_symbol",
+        "start": 30,
+        "end": 38,
+        "confidence_entity": 0.8791221976280212,
+        "value": "Vingroup",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn giúp tôi bán 150 cổ phiếu của MWG với giá hiện tại",
+    "entities": [
+      {
+        "start": 17,
+        "end": 20,
+        "value": "150",
+        "entity": "amount"
+      },
+      {
+        "start": 34,
+        "end": 37,
+        "value": "MWG",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 46,
+        "end": 54,
+        "value": "hiện tại",
+        "entity": "price"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 17,
+        "end": 20,
+        "confidence_entity": 0.9638453722000122,
+        "value": "150",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "stock_symbol",
+        "start": 34,
+        "end": 37,
+        "confidence_entity": 0.6041144728660583,
+        "value": "MWG",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

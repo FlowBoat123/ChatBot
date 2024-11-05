@@ -1,0 +1,14 @@
+recipe: default.v1
+assistant_id: 20240923-121251-independent-burrata
+
+language: "vi"
+pipeline:
+  - name: "WhitespaceTokenizer"  # Tokenizer cho tiếng Việt
+  - name: "LexicalSyntacticFeaturizer"  # Tạo các đặc trưng ngữ nghĩa và cú pháp
+  - name: "CountVectorsFeaturizer"  # Tạo các đặc trưng vector từ văn bản
+    analyzer: "char_wb"  # Phân tích văn bản theo ký tự
+    min_ngram: 1  # N-gram tối thiểu
+    max_ngram: 4  # N-gram tối đa
+  - name: "ftfeats.FastTextFeaturizer"  # Sử dụng FastText để tạo đặc trưng
+    cache_dir: "./Fasttext/vector/"  # Đường dẫn lưu trữ cache
+    file: "cc.vi.300.bin"  # Tên file FastText

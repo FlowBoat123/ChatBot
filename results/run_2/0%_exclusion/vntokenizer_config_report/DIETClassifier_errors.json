@@ -1,0 +1,236 @@
+[
+  {
+    "text": "Cập nhật thị trường chứng khoán hôm nay thế nào?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 32,
+        "end": 39,
+        "confidence_entity": 0.5696859359741211,
+        "value": "hôm nay",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn có thể cập nhật cho tôi về tình hình thị trường chứng khoán hôm nay được không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 64,
+        "end": 71,
+        "confidence_entity": 0.5927501916885376,
+        "value": "hôm nay",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn có thể đặt lệnh mua cho tôi 200 cổ phiếu VNM ngay lúc này không?",
+    "entities": [
+      {
+        "start": 32,
+        "end": 35,
+        "value": "200",
+        "entity": "amount"
+      },
+      {
+        "start": 45,
+        "end": 48,
+        "value": "VNM",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 58,
+        "end": 61,
+        "value": "này",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 32,
+        "end": 35,
+        "confidence_entity": 0.9951856136322021,
+        "value": "200",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "stock_symbol",
+        "start": 45,
+        "end": 48,
+        "confidence_entity": 0.9836694598197937,
+        "value": "VNM",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn giúp tôi đặt lệnh mua cổ phiếu MWG với giá thị trường trong phiên này nhé",
+    "entities": [
+      {
+        "start": 35,
+        "end": 38,
+        "value": "MWG",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 70,
+        "end": 73,
+        "value": "này",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 35,
+        "end": 38,
+        "confidence_entity": 0.9917160272598267,
+        "value": "MWG",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Giờ mở hôm nay?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 7,
+        "end": 14,
+        "confidence_entity": 0.5691794157028198,
+        "value": "hôm nay",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Thị trường chứng khoán hôm nay mở cửa mấy giờ?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 23,
+        "end": 30,
+        "confidence_entity": 0.531104326248169,
+        "value": "hôm nay",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hủy lệnh bán cổ phiếu này ngay bây giờ.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 31,
+        "end": 38,
+        "confidence_entity": 0.956940233707428,
+        "value": "bây giờ",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hủy giao dịch mua ngay bây giờ.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 23,
+        "end": 30,
+        "confidence_entity": 0.9503270983695984,
+        "value": "bây giờ",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi muốn bán 300 cổ phiếu của Vingroup trong phiên giao dịch này",
+    "entities": [
+      {
+        "start": 13,
+        "end": 16,
+        "value": "300",
+        "entity": "amount"
+      },
+      {
+        "start": 30,
+        "end": 38,
+        "value": "Vingroup",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 61,
+        "end": 64,
+        "value": "này",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 13,
+        "end": 16,
+        "confidence_entity": 0.9956055283546448,
+        "value": "300",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "stock_symbol",
+        "start": 30,
+        "end": 38,
+        "confidence_entity": 0.9741095900535583,
+        "value": "Vingroup",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn giúp tôi bán 150 cổ phiếu của MWG với giá hiện tại",
+    "entities": [
+      {
+        "start": 17,
+        "end": 20,
+        "value": "150",
+        "entity": "amount"
+      },
+      {
+        "start": 34,
+        "end": 37,
+        "value": "MWG",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 46,
+        "end": 54,
+        "value": "hiện tại",
+        "entity": "price"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 17,
+        "end": 20,
+        "confidence_entity": 0.995474636554718,
+        "value": "150",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "stock_symbol",
+        "start": 34,
+        "end": 37,
+        "confidence_entity": 0.9917202591896057,
+        "value": "MWG",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

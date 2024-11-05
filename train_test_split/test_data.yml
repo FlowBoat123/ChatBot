@@ -8,206 +8,206 @@ nlu:
     - Chính xác, mua luôn.
 - intent: từ chối
   examples: |
-    - Không cần, bỏ qua giao dịch này.
-    - Hủy lệnh này đi.
+    - Không chắc chắn, đừng thực hiện.
+    - Dừng, tôi không muốn mua.
 - intent: hỏi tên đăng nhập
   examples: |
-    - Làm thế nào để kiểm tra tên đăng nhập của tôi?
-    - Tôi cần biết tên đăng nhập của mình, bạn có thể kiểm tra không?
+    - Tên đăng nhập của tôi là gì?
+    - Tôi quên tên đăng nhập, có thể giúp tôi không?
 - intent: không rõ
   examples: |
     - Tôi chưa chắc chắn.
-    - Chờ một chút, tôi không rõ.
+    - Tôi cần thêm thông tin.
 - intent: tổng giá trị bán
   examples: |
-    - Tôi đã bán cổ phiếu, tổng giá trị tôi đã nhận được là bao nhiêu?
-    - Bạn có thể xác nhận tổng số tiền từ việc bán cổ phiếu của tôi không?
-    - Tổng số tiền thu được từ bán cổ phiếu là bao nhiêu?
+    - Tổng giá trị thực tế bán được là bao nhiêu?
+    - Tổng số tiền từ bán cổ phiếu là bao nhiêu?
+    - Tổng số tiền bán được là bao nhiêu?
 - intent: OTP
   examples: |
-    - Mã OTP?
-    - Gửi OTP.
-    - Mã OTP của tôi là gì để đăng nhập?
+    - Lấy OTP.
+    - Gửi cho tôi mã OTP để xác thực đăng nhập.
+    - Tôi không nhận được mã OTP, gửi lại giúp.
 - intent: truy vấn đã bán được bao nhiêu cổ phiếu
   examples: |
-    - Khi nào cổ phiếu [VNM](stock_symbol) tôi đã bán sẽ được ghi nhận vào tài khoản?
-    - Cổ phiếu [Vingroup](stock_symbol) bán [hôm nay](time) về tài khoản ngày nào?
+    - [BID](stock_symbol) về chưa?
+    - Khi nào thì cổ phiếu [FPT](stock_symbol) tôi vừa mua [hôm qua](time) sẽ được ghi nhận vào tài khoản?
     - Khi nào cổ phiếu [BID](stock_symbol) được ghi nhận vào tài khoản sau giao dịch?
     - Khi nào cổ phiếu [BID](stock_symbol) của tôi sẽ được ghi nhận vào tài khoản sau giao dịch bán?
 - intent: các mã cổ phiếu đã mua
   examples: |
-    - Cổ phiếu đã mua?
-    - Bạn có thể kiểm tra giúp tôi danh sách các cổ phiếu tôi đã mua không?
-    - Bạn có thể liệt kê các mã cổ phiếu mà tôi đang có?
+    - Tôi muốn biết danh sách các cổ phiếu hiện tại trong tài khoản của tôi.
+    - Bạn có thể cho tôi biết danh sách các mã cổ phiếu tôi đã mua không?
+    - Kiểm tra giúp tôi các cổ phiếu đã mua.
 - intent: biến động các cổ phiếu đã mua
   examples: |
-    - Bạn có thể cho tôi biết các mã cổ phiếu tôi đã mua biến động ra sao?
-    - Biến động danh sách cổ phiếu?
-    - Sự biến động của các mã cổ phiếu đã mua là gì?
     - Biến động cổ phiếu?
+    - Các mã cổ phiếu tôi đang nắm giữ biến động ra sao?
+    - Kiểm tra sự biến động của danh sách cổ phiếu giúp tôi.
+    - Bạn có thể cho tôi biết các mã cổ phiếu tôi đã mua biến động ra sao?
 - intent: phí bán
   examples: |
-    - Tôi muốn biết phí bán cổ phiếu là bao nhiêu?
-    - Phí là?
-    - Bán mất bao nhiêu tiền phí?
-    - Phí?
+    - Phí giao dịch khi bán cổ phiếu là bao nhiêu?
+    - Phí phải trả khi bán cổ phiếu là bao nhiêu?
+    - Phí bán cổ phiếu là bao nhiêu?
+    - Bạn có thể giúp tôi kiểm tra phí bán cổ phiếu không?
 - intent: messenger
   examples: |
-    - Làm thế nào để liên hệ với người môi giới? Tôi cần tài khoản Messenger của họ.
-    - Cho tôi tài khoản Messenger của người môi giới.
-    - Tôi cần tài khoản Messenger của người chăm sóc khách hàng để hỏi thêm thông tin.
-    - Vui lòng cho tôi biết tài khoản Messenger của người chăm sóc khách hàng.
+    - Có thể cho tôi tài khoản Messenger của người chăm sóc khách hàng để được tư vấn không?
+    - Messenger môi giới?
+    - Vui lòng cung cấp tài khoản Messenger của người chăm sóc khách hàng cho tôi.
+    - Messenger người môi giới?
 - intent: Chào
   examples: |
-    - Xin chào, chatbot!
+    - Chào!
+    - Chào chatbot, có thông tin gì mới mà bạn có thể cung cấp cho tôi không?
+    - Hello there!
     - Hello!
-    - Chào chatbot, tôi đang cần trợ giúp với một vấn đề.
-    - Hi!
 - intent: lịch sử
   examples: |
+    - Cung cấp thông tin về thị trường hôm nay?
+    - Thị trường chứng khoán tuần trước thế nào?
     - Bạn có thể cung cấp thông tin về thị trường chứng khoán vào ngày hôm qua không?
-    - Thị trường hôm qua biến động ra sao?
-    - Thị trường hôm nay?
-    - Bạn có thể cập nhật cho tôi về tình hình thị trường chứng khoán hôm nay được không?
+    - Diễn biến thị trường tuần trước thế nào?
 - intent: zalo
   examples: |
-    - Làm sao để liên hệ với người môi giới qua Zalo?
-    - Cần số Zalo để liên hệ với người môi giới.
-    - Có thể cho tôi số Zalo của người chăm sóc khách hàng để được tư vấn không?
-    - Zalo môi giới?
-    - Zalo chăm sóc khách hàng?
+    - Tôi cần số Zalo của người chăm sóc khách hàng để hỏi thêm thông tin.
+    - Zalo liên hệ môi giới?
+    - Tôi muốn liên hệ trực tiếp với người môi giới, cho tôi số Zalo của họ.
+    - Cung cấp số Zalo của người môi giới cho tôi.
+    - Cho tôi số Zalo người chăm sóc khách hàng.
 - intent: facebook
   examples: |
-    - Xin tài khoản Facebook của người chăm sóc khách hàng.
-    - Facebook người tư vấn?
-    - Tôi muốn tài khoản Facebook của người môi giới để hỏi thêm về cổ phiếu.
-    - Vui lòng cho tôi biết tài khoản Facebook của người chăm sóc khách hàng.
+    - Facebook chăm sóc khách hàng?
+    - Tài khoản Facebook của người chăm sóc khách hàng là gì?
+    - Có thể cho tôi tài khoản Facebook của người chăm sóc khách hàng để được tư vấn không?
+    - Facebook tư vấn?
 - intent: Phí giao dịch
   examples: |
-    - Xin cho tôi biết các khoản phí phải trả khi thực hiện giao dịch chứng khoán.
-    - Các loại phí giao dịch là gì?
-    - Xin vui lòng cung cấp thông tin chi tiết về các loại phí giao dịch.
-    - Chính sách phí giao dịch chi tiết?
+    - Tôi muốn biết mức phí giao dịch hiện tại của công ty là bao nhiêu?
+    - Tôi muốn tìm hiểu về các loại phí áp dụng khi giao dịch cổ phiếu.
+    - Mức phí giao dịch hiện tại là bao nhiêu?
+    - Giải thích các khoản phí giao dịch?
 - intent: Đặt lệnh mua cổ phiếu trong phiên
   examples: |
+    - Mua [500](amount) cổ [HPG](stock_symbol)
+    - Mua [100](amount) cổ [MSN](stock_symbol)
+    - Tôi cần đặt lệnh mua cổ phiếu [TCB](stock_symbol) với giá [50.000](price) VND/cổ phiếu trong phiên [hiện tại](time)
     - Mua [300](amount) cổ phiếu [Vingroup](stock_symbol) trong phiên giao dịch [này](time)
-    - Giúp đặt lệnh mua [200](amount) cổ phiếu [FPT](stock_symbol) ngay
-    - Mua [50](amount) cổ [VCB](stock_symbol)
-    - Bạn giúp tôi đặt lệnh mua cổ phiếu [MWG](stock_symbol) với giá thị trường trong phiên [này](time) nhé
-    - Đặt lệnh mua cổ phiếu [MWG](stock_symbol) với giá thị trường
+    - Mua [300](amount) cổ [VIC](stock_symbol)
 - intent: thuế bán
   examples: |
-    - Thuế là bao nhiêu?
-    - Bán mất bao nhiêu thuế?
-    - Tôi muốn biết mức thuế tôi đã bị trừ khi bán cổ phiếu.
-    - Thuế bán cổ phiếu là bao nhiêu?
+    - Số tiền thuế phải nộp khi bán cổ phiếu là bao nhiêu?
+    - Thuế giao dịch bán là bao nhiêu?
+    - Bao nhiêu thuế bán?
+    - Bạn có thể giúp tôi kiểm tra thuế bán cổ phiếu không?
 - intent: email
   examples: |
+    - Cho tôi email của người môi giới.
     - Tôi muốn liên hệ trực tiếp với người môi giới, cho tôi email của họ.
-    - Vui lòng cung cấp email của người chăm sóc khách hàng cho tôi.
-    - Có thể cho tôi email của người chăm sóc khách hàng để được tư vấn không?
+    - Tôi cần email của người chăm sóc khách hàng để hỏi thêm thông tin.
     - Cần email người môi giới.
 - intent: số dư
   examples: |
-    - Tôi cần biết số tiền hiện có trong tài khoản của mình.
-    - Kiểm tra tiền.
-    - Số dư tài khoản tôi là bao nhiêu?
+    - Bạn có thể cho tôi biết tài khoản của tôi còn bao nhiêu tiền không?
+    - Vui lòng cung cấp thông tin về số dư trong tài khoản của tôi.
+    - Số tiền trong tài khoản của tôi là bao nhiêu?
+    - Số tiền trong tài khoản của tôi?
     - Bạn có thể cho tôi biết số dư hiện tại trong tài khoản của tôi không?
-    - Tài khoản còn bao nhiêu?
 - intent: giao dịch phái sinh
   examples: |
-    - Bạn có thể cung cấp cho tôi thông tin về lợi nhuận từ các giao dịch phái sinh?
-    - Phái sinh lời?
+    - Tổng lợi nhuận từ giao dịch phái sinh của tôi?
     - Phái sinh thế nào?
-    - Lời phái sinh?
-    - Kiểm tra giúp tôi lợi nhuận từ giao dịch phái sinh.
+    - Lợi nhuận từ giao dịch phái sinh của tôi thế nào?
+    - Kiểm tra lợi nhuận từ giao dịch phái sinh giúp tôi.
+    - Vui lòng kiểm tra giúp tôi lợi nhuận từ các giao dịch phái sinh.
 - intent: check lệnh bán
   examples: |
-    - Tôi muốn biết lệnh bán [100](amount) cổ phiếu [Masan Group](stock_symbol) của tôi đã hoàn tất chưa?
-    - Tôi muốn biết liệu lệnh bán [150](amount) cổ phiếu [MWG](stock_symbol) của tôi đã xong chưa?
-    - Lệnh bán [100](amount) cổ phiếu [VNM](stock_symbol) đã xử lý chưa?
-    - [150](amount) [MWG](stock_symbol) bán xong chưa?
+    - [200](amount) [TCB](stock_symbol) bán chưa?
+    - [300](amount) [VIC](stock_symbol) đã khớp chưa?
+    - Tôi đã bán [50](amount) cổ phiếu [Vietcombank](stock_symbol), bạn có thể cho tôi biết kết quả không?
+    - Tôi muốn biết lệnh bán [200](amount) cổ phiếu [TCB](stock_symbol) của tôi đã khớp chưa?
 - intent: Giờ mở cửa, đóng cửa
   examples: |
-    - Bạn có thể cho tôi biết thị trường chứng khoán sẽ mở cửa vào lúc nào không?
-    - Bạn có thể cho tôi biết giờ mở cửa thị trường chứng khoán hôm nay không?
+    - Thị trường đóng cửa lúc nào?
+    - Tôi cần biết thị trường chứng khoán bắt đầu giao dịch vào lúc mấy giờ.
+    - Thời gian chính xác thị trường mở cửa?
+    - Giờ mở?
     - Thị trường chứng khoán hôm nay mở cửa vào lúc mấy giờ?
-    - Bạn có thể cho tôi biết thị trường chứng khoán đóng cửa vào lúc mấy giờ không?
-    - Thị trường mở cửa khi nào?
 - intent: huỷ bán cổ phiếu
   examples: |
-    - Hủy lệnh bán cổ phiếu XYZ.
-    - Vui lòng hủy lệnh bán cổ phiếu của tôi.
-    - Hủy.
-    - Tôi yêu cầu lệnh bán cổ phiếu này được hủy.
-    - Hủy lệnh bán cổ phiếu này ngay bây giờ.
+    - Hủy ngay giao dịch bán cổ phiếu XYZ.
+    - Hủy giao dịch bán cổ phiếu ngay.
+    - Hủy giao dịch bán ngay bây giờ.
+    - Hủy lệnh bán.
+    - Tôi yêu cầu hủy lệnh bán cổ phiếu XYZ.
 - intent: cổ phiếu bao giờ về
   examples: |
-    - [BID](stock_symbol) về chưa?
-    - Thời gian cổ phiếu [MWG](stock_symbol) về tài khoản sau khi giao dịch là khi nào?
+    - Cổ phiếu [Vinamilk](stock_symbol) về khi nào?
+    - [HPG](stock_symbol) khi nào có?
+    - Khi nào cổ phiếu [Vinamilk](stock_symbol) về tài khoản?
     - Cổ phiếu [Vingroup](stock_symbol) tôi bán [hôm nay](time) sẽ về tài khoản vào ngày nào?
-    - Khi nào cổ phiếu [BID](stock_symbol) của tôi sẽ được ghi nhận vào tài khoản sau giao dịch bán?
-    - Khi nào cổ phiếu [VNM](stock_symbol) tôi đã bán sẽ được ghi nhận vào tài khoản?
+    - Thời gian cổ phiếu [MWG](stock_symbol) về tài khoản sau khi giao dịch là khi nào?
 - intent: huỷ mua cổ phiếu
   examples: |
-    - Hủy mua.
-    - Hủy giao dịch mua ngay.
-    - Hủy cổ phiếu.
-    - Tôi muốn hủy lệnh mua cổ phiếu, hãy xử lý ngay.
-    - Lệnh mua cổ phiếu cần phải được hủy ngay.
+    - Vui lòng hủy lệnh mua cổ phiếu của tôi.
+    - Hủy.
+    - Hủy lệnh.
+    - Hủy giao dịch mua cổ phiếu ngay.
+    - Hủy ngay.
 - intent: số điện thoại
   examples: |
-    - Số điện thoại?
-    - Làm thế nào để tôi liên hệ với người môi giới để nhận tư vấn chi tiết hơn?
-    - Số chăm sóc khách hàng?
-    - Số người tư vấn?
+    - Số điện thoại môi giới?
     - Số liên hệ môi giới?
+    - Số điện thoại?
+    - Vui lòng cung cấp số điện thoại của người chăm sóc khách hàng cho tôi.
+    - Làm thế nào để tôi liên hệ với người môi giới để nhận tư vấn chi tiết hơn?
 - intent: đặt lệnh bán
   examples: |
-    - Bán [300](amount) [VIC](stock_symbol)
-    - Bán [500](amount) cổ phiếu [HPG](stock_symbol)
-    - Bán [50](amount) cổ phiếu [Vietcombank](stock_symbol)
-    - Bán [150](amount) cổ phiếu [BID](stock_symbol)
-    - Bán [500](amount) [HPG](stock_symbol)
+    - Bán [100](amount) [Vinamilk](stock_symbol)
+    - Bán [200](amount) [TCB](stock_symbol)
+    - Bạn có thể bán [150](amount) cổ phiếu của [BID](stock_symbol) giúp tôi trong phiên [này](time) không?
+    - Bán [100](amount) [VNM](stock_symbol)
+    - Bán [100](amount) [MSN](stock_symbol)
 - intent: Than
   examples: |
-    - Sự thất vọng với thị trường chứng khoán đang ngày càng gia tăng.
-    - Sự biến động của cổ phiếu làm cho cảm giác đầu tư trở nên tồi tệ.
-    - Tôi hoàn toàn chán nản với tình trạng chứng khoán không ngừng giảm giá.
-    - Cảm giác như mọi nỗ lực đầu tư đều vô ích khi nhìn vào sự tụt dốc của thị trường.
+    - Cảm giác như mọi nỗ lực đầu tư đều không được đền đáp xứng đáng.
+    - Thất vọng tràn trề với những kết quả đầu tư không như mong đợi.
+    - Cảm giác như mọi quyết định đầu tư của tôi đều không mang lại kết quả tốt.
+    - Cảm giác như tôi không thể kiếm được lợi nhuận từ chứng khoán.
+    - Tôi đã mất nhiều tiền vì cổ phiếu giảm giá quá nhanh.
     - Thực sự không thể tin được cổ phiếu lại tiếp tục giảm giá như vậy!
-    - Những quyết định đầu tư gần đây của tôi đều thất bại.
 - intent: Không phân loại
   examples: |
-    - Khuyến mãi đặc biệt?
-    - Đọc sách nào?
-    - Có thông tin gì về các tổ chức phi lợi nhuận hoạt động trong khu vực không?
+    - Tôi muốn biết cách tổ chức một sự kiện thành công.
     - Có cách nào để cải thiện kỹ năng viết không?
-    - Tôi cần một số mẹo để giảm cân.
+    - Cách chăm sóc tóc?
+    - Có thông tin gì về các chương trình học bổng hiện tại không?
     - Tôi muốn tìm hiểu về các loại hình đầu tư tài chính khác nhau.
-    - Bạn có thể giúp tôi tìm một chỗ ở phù hợp khi đi du lịch không?
-    - Tôi cần tìm một nhà hàng gần đây.
-    - Cập nhật phần mềm?
-    - Tôi cần biết thông tin về các trường đại học ở thành phố này.
-    - Có cách nào để cải thiện kỹ năng giải quyết vấn đề không?
-    - Tôi muốn biết cách bảo quản thực phẩm lâu dài.
-    - Quà tặng sáng tạo?
-    - Nhà hàng gần đây?
-    - Bạn có thể giúp tôi tìm một công việc bán thời gian không?
-    - Sách học tiếng anh?
-    - Bản tin thời sự?
-    - Có thông tin gì về các sự kiện âm nhạc sắp tới không?
-    - Tôi muốn tìm hiểu về các hoạt động giải trí trong khu vực.
-    - Bạn có thể giúp tôi tìm một khóa học trực tuyến hữu ích không?
-    - Tôi muốn biết về các dịch vụ hỗ trợ học tập cho sinh viên.
-    - Bài tập thể dục?
+    - Tôi muốn tìm hiểu về các công ty cung cấp dịch vụ hosting.
+    - Bạn có biết cách chuẩn bị cho một kỳ thi lớn không?
+    - Tôi cần biết cách sử dụng các công cụ phần mềm văn phòng.
+    - Bài hát nổi bật?
+    - Thực phẩm chức năng?
+    - Có thông tin gì về các buổi hòa nhạc sắp tới không?
+    - Có thông tin gì về các tổ chức phi lợi nhuận hoạt động trong khu vực không?
+    - Tin tức công nghệ?
+    - Cách làm việc hiệu quả?
+    - Thời gian mở cửa?
+    - Đọc báo sáng nay?
+    - Thực phẩm bổ dưỡng?
+    - Tôi muốn tìm hiểu về các phương pháp quản lý dự án hiệu quả.
+    - Phim hành động mới?
     - Có cách nào để cải thiện kỹ năng giao tiếp hiệu quả không?
-    - Địa điểm cắm trại?
+    - Phim chiếu rạp mới?
+    - Tôi đang tìm kiếm một cuốn sách về lập trình.
+    - Cách chữa bệnh cảm?
     - Số lượng sản phẩm bán chạy?
-    - Phương pháp học tốt?
-    - Quà tặng cho bạn bè?
-    - Có sự kiện thể thao nào quan trọng sắp tới không?
-    - Dịch vụ vận chuyển?
     - Món ăn làm thế nào?
-    - Mua sắm giảm giá?
-    - Bạn có biết cách làm món tráng miệng đơn giản không?
+    - Tôi muốn biết về các dịch vụ hỗ trợ học tập cho sinh viên.
+    - Có thông tin gì về các chương trình đào tạo kỹ năng mềm không?
+    - Tôi cần tìm một người dạy kèm cho môn học này.
+    - Đọc sách nào?
+    - Bạn có thể gợi ý một bộ phim hay không?
+    - Tin tức thể thao?
+    - Tôi cần tìm một dịch vụ sửa chữa ô tô tốt.

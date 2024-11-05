@@ -1,0 +1,181 @@
+version: "3.1"
+nlu:
+- intent: Đồng ý
+  examples: |
+    - Đúng rồi, mua đi.
+    - Chắc chắn, thực hiện đi.
+- intent: từ chối
+  examples: |
+    - Không, không thực hiện.
+- intent: hỏi tên đăng nhập
+  examples: |
+    - Tên đăng nhập của tôi đã được đăng ký là gì?
+- intent: không rõ
+  examples: |
+    - Chưa rõ, cần xem xét lại.
+    - Hãy đợi, tôi phải suy nghĩ thêm.
+- intent: tổng giá trị bán
+  examples: |
+    - Bạn có thể giúp tôi kiểm tra tổng số tiền từ việc bán cổ phiếu không?
+    - Bạn có thể xác nhận tổng số tiền từ việc bán cổ phiếu của tôi không?
+- intent: truy vấn đã bán được bao nhiêu cổ phiếu
+  examples: |
+    - Bạn có thể xác nhận giúp tôi thời gian cổ phiếu [HPG](stock_symbol) sẽ về tài khoản sau khi bán không?
+    - [Vinamilk](stock_symbol) khi nào về?
+    - Khi nào cổ phiếu [VNM](stock_symbol) tôi đã bán sẽ được ghi nhận vào tài khoản?
+- intent: OTP
+  examples: |
+    - Cho OTP.
+    - Làm sao để lấy OTP đăng nhập?
+    - Giúp tôi với, mã OTP để đăng nhập bị mất.
+- intent: các mã cổ phiếu đã mua
+  examples: |
+    - Bạn có thể kiểm tra giúp tôi danh sách các cổ phiếu tôi đã mua không?
+    - Bạn có thể liệt kê các mã cổ phiếu mà tôi đang có?
+    - Cổ phiếu trong tài khoản của tôi?
+- intent: biến động các cổ phiếu đã mua
+  examples: |
+    - Tôi muốn biết các mã cổ phiếu đã mua của tôi biến động như thế nào.
+    - Sự biến động của các mã cổ phiếu đã mua?
+    - Bạn có thể liệt kê sự biến động của các mã cổ phiếu mà tôi đang có?
+- intent: phí bán
+  examples: |
+    - Tổng số tiền phí tôi phải trả khi bán cổ phiếu là bao nhiêu?
+    - Bán mất bao nhiêu?
+    - Phí bao nhiêu?
+- intent: messenger
+  examples: |
+    - Vui lòng cho tôi biết tài khoản Messenger của người chăm sóc khách hàng.
+    - Tài khoản Messenger của người chăm sóc khách hàng là gì?
+    - Làm sao để liên hệ với người môi giới qua Messenger?
+- intent: Chào
+  examples: |
+    - Chào bạn!
+    - Xin chào chatbot, tôi cần biết thêm chi tiết về dịch vụ.
+    - Hi!
+    - Chào chatbot, tôi cần sự giúp đỡ của bạn trong việc tìm kiếm thông tin.
+- intent: zalo
+  examples: |
+    - Tôi muốn số Zalo của người môi giới để hỏi thêm về cổ phiếu.
+    - Zalo người tư vấn?
+    - Cần số Zalo để liên hệ với người môi giới.
+- intent: lịch sử
+  examples: |
+    - Hôm qua thế nào?
+    - Thông tin thị trường chứng khoán hôm qua?
+    - Bạn có thể cập nhật cho tôi về tình hình thị trường chứng khoán hôm nay được không?
+- intent: facebook
+  examples: |
+    - Cần tài khoản Facebook để liên hệ với người môi giới.
+    - Xin tài khoản Facebook của người chăm sóc khách hàng.
+    - Vui lòng cung cấp tài khoản Facebook của người chăm sóc khách hàng cho tôi.
+    - Facebook người tư vấn?
+- intent: Đặt lệnh mua cổ phiếu trong phiên
+  examples: |
+    - Bạn giúp tôi đặt lệnh mua cổ phiếu [MWG](stock_symbol) với giá thị trường trong phiên [này](time) nhé
+    - Mua [FPT](stock_symbol) [200](amount) cổ
+    - Tôi muốn mua [100](amount) cổ phiếu của [Masan Group](stock_symbol) trong phiên giao dịch [đang diễn ra](time)
+- intent: Phí giao dịch
+  examples: |
+    - Tôi cần biết phí giao dịch áp dụng cho các giao dịch cổ phiếu là bao nhiêu.
+    - Các khoản phí giao dịch là gì?
+    - Các loại phí áp dụng khi giao dịch?
+    - Phí giao dịch khi mua bán cổ phiếu?
+- intent: thuế bán
+  examples: |
+    - Thuế bán bao nhiêu?
+    - Thuế bán cổ phiếu là bao nhiêu?
+    - Thuế bán là bao nhiêu?
+- intent: email
+  examples: |
+    - Xin email của người chăm sóc khách hàng.
+    - Có thể cho tôi email của người chăm sóc khách hàng để được tư vấn không?
+    - Tôi muốn email của người môi giới để hỏi thêm về cổ phiếu.
+    - Email?
+- intent: số dư
+  examples: |
+    - Kiểm tra số dư tài khoản giúp tôi.
+    - Số dư hiện tại trong tài khoản là bao nhiêu?
+    - Kiểm tra số dư giúp tôi.
+- intent: giao dịch phái sinh
+  examples: |
+    - Bạn có thể cho tôi biết chi tiết về lợi nhuận từ giao dịch phái sinh không?
+    - Kiểm tra giúp tôi lợi nhuận từ giao dịch phái sinh.
+    - Bạn có thể cho tôi biết lợi nhuận từ giao dịch phái sinh của tôi không?
+    - Lợi nhuận từ các giao dịch phái sinh ra sao?
+- intent: check lệnh bán
+  examples: |
+    - Lệnh bán [100](amount) cổ phiếu [VNM](stock_symbol) đã xử lý chưa?
+    - Bán [Vinamilk](stock_symbol) xong chưa?
+    - Tôi muốn biết lệnh bán [100](amount) cổ phiếu [Masan Group](stock_symbol) của tôi đã hoàn tất chưa?
+    - Bạn có thể kiểm tra giúp tôi xem lệnh bán [100](amount) cổ phiếu [FPT](stock_symbol) đã hoàn thành chưa?
+- intent: Giờ mở cửa, đóng cửa
+  examples: |
+    - Bạn có thể cho tôi biết thị trường chứng khoán sẽ mở cửa vào lúc nào không?
+    - Vui lòng cho tôi biết thời gian giao dịch của thị trường chứng khoán.
+    - Thị trường bắt đầu giao dịch vào lúc mấy giờ?
+    - Bạn có thể cho tôi biết thị trường chứng khoán đóng cửa vào lúc mấy giờ không?
+- intent: huỷ bán cổ phiếu
+  examples: |
+    - Yêu cầu hủy lệnh bán.
+    - Hủy lệnh.
+    - Hủy lệnh bán cổ phiếu này.
+- intent: cổ phiếu bao giờ về
+  examples: |
+    - Khi nào thì cổ phiếu [FPT](stock_symbol) tôi vừa mua [hôm qua](time) sẽ được ghi nhận vào tài khoản?
+    - Khi nào cổ phiếu [BID](stock_symbol) của tôi sẽ được ghi nhận vào tài khoản sau giao dịch bán?
+    - Khi nào cổ phiếu [BID](stock_symbol) được ghi nhận vào tài khoản sau giao dịch?
+    - Cổ phiếu [TCB](stock_symbol) [hôm nay](time) mua về tài khoản lúc nào?
+- intent: huỷ mua cổ phiếu
+  examples: |
+    - Hủy ngay giao dịch mua cổ phiếu XYZ.
+    - Hủy lệnh mua này ngay lập tức.
+    - Hủy mua.
+    - Tôi cần hủy lệnh mua cổ phiếu này ngay lập tức.
+- intent: số điện thoại
+  examples: |
+    - Cần số điện thoại để liên hệ với người môi giới.
+    - Cần số điện thoại của người chăm sóc khách hàng.
+    - Số liên hệ chăm sóc khách hàng?
+    - Cho tôi số điện thoại của người môi giới.
+- intent: đặt lệnh bán
+  examples: |
+    - Bán [150](amount) cổ phiếu [BID](stock_symbol)
+    - Bán [150](amount) [MWG](stock_symbol)
+    - Tôi cần bán [500](amount) cổ phiếu của [HPG](stock_symbol) ngay [bây giờ](time)
+    - Bán [500](amount) cổ phiếu [HPG](stock_symbol)
+    - Bán [50](amount) cổ phiếu [Vietcombank](stock_symbol)
+- intent: Than
+  examples: |
+    - Sự biến động của cổ phiếu làm cho cảm giác đầu tư trở nên tồi tệ.
+    - Thị trường chứng khoán đang làm mọi thứ trở nên khó khăn hơn.
+    - Đầu tư vào chứng khoán gần đây không mang lại kết quả như kỳ vọng.
+    - Thực sự không thể chịu nổi với sự giảm giá không ngừng của cổ phiếu!
+- intent: Không phân loại
+  examples: |
+    - Bản tin thời sự?
+    - Mẹo học tập?
+    - Bạn có thể giúp tôi tìm một công thức làm món ăn mới không?
+    - Bạn có thể giúp tôi tìm một lớp học về nhiếp ảnh không?
+    - Tôi cần tìm hiểu về các công ty cung cấp dịch vụ cloud computing.
+    - Kinh nghiệm làm việc?
+    - Tôi muốn biết về các hoạt động giải trí cuối tuần trong khu vực.
+    - Địa chỉ sửa chữa?
+    - Số điện thoại khách sạn?
+    - Bạn có thể giúp tôi tìm một khóa học trực tuyến hữu ích không?
+    - Tôi cần biết cách sửa chữa điện thoại của mình.
+    - Khách sạn tốt nhất?
+    - Tôi cần tìm hiểu về các dịch vụ chăm sóc thú cưng.
+    - Dịch vụ chăm sóc sức khỏe?
+    - Mẹo làm đẹp?
+    - Cập nhật phần mềm?
+    - Bạn có biết cách chuẩn bị cho một cuộc họp quan trọng không?
+    - Khuyến mãi đặc biệt?
+    - Tôi cần biết cách chuẩn bị cho một chuyến đi dài ngày.
+    - Tôi cần tìm hiểu về các phong trào xã hội hiện tại.
+    - Dịch vụ sửa chữa nhà?
+    - Học bổng du học?
+    - Chăm sóc da mặt?
+    - Tôi muốn biết thời tiết hôm nay như thế nào?
+    - Cách tiết kiệm?
+    - Bạn có biết cách làm một món ăn chay ngon không?

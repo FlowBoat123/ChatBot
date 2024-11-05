@@ -1,0 +1,770 @@
+[
+  {
+    "text": "Đúng rồi, mua đi.",
+    "intent": "Đồng ý",
+    "intent_prediction": {
+      "name": "các mã cổ phiếu đã mua",
+      "confidence": 0.13662391901016235
+    }
+  },
+  {
+    "text": "Chắc chắn, thực hiện đi.",
+    "intent": "Đồng ý",
+    "intent_prediction": {
+      "name": "biến động các cổ phiếu đã mua",
+      "confidence": 0.22400520741939545
+    }
+  },
+  {
+    "text": "Không, không thực hiện.",
+    "intent": "từ chối",
+    "intent_prediction": {
+      "name": "Đặt lệnh mua cổ phiếu trong phiên",
+      "confidence": 0.12709635496139526
+    }
+  },
+  {
+    "text": "Tên đăng nhập của tôi đã được đăng ký là gì?",
+    "intent": "hỏi tên đăng nhập",
+    "intent_prediction": {
+      "name": "số điện thoại",
+      "confidence": 0.11277203261852264
+    }
+  },
+  {
+    "text": "Chưa rõ, cần xem xét lại.",
+    "intent": "không rõ",
+    "intent_prediction": {
+      "name": "biến động các cổ phiếu đã mua",
+      "confidence": 0.11702019721269608
+    }
+  },
+  {
+    "text": "Hãy đợi, tôi phải suy nghĩ thêm.",
+    "intent": "không rõ",
+    "intent_prediction": {
+      "name": "hỏi tên đăng nhập",
+      "confidence": 0.06403651088476181
+    }
+  },
+  {
+    "text": "Bạn có thể giúp tôi kiểm tra tổng số tiền từ việc bán cổ phiếu không?",
+    "intent": "tổng giá trị bán",
+    "intent_prediction": {
+      "name": "phí bán",
+      "confidence": 0.07863307744264603
+    }
+  },
+  {
+    "text": "Vinamilk khi nào về?",
+    "intent": "truy vấn đã bán được bao nhiêu cổ phiếu",
+    "intent_prediction": {
+      "name": "Phí giao dịch",
+      "confidence": 0.11527124047279358
+    }
+  },
+  {
+    "text": "Cho OTP.",
+    "intent": "OTP",
+    "intent_prediction": {
+      "name": "thuế bán",
+      "confidence": 0.05812854692339897
+    }
+  },
+  {
+    "text": "Làm sao để lấy OTP đăng nhập?",
+    "intent": "OTP",
+    "intent_prediction": {
+      "name": "biến động các cổ phiếu đã mua",
+      "confidence": 0.08670400828123093
+    }
+  },
+  {
+    "text": "Giúp tôi với, mã OTP để đăng nhập bị mất.",
+    "intent": "OTP",
+    "intent_prediction": {
+      "name": "biến động các cổ phiếu đã mua",
+      "confidence": 0.2498072385787964
+    }
+  },
+  {
+    "text": "Bạn có thể kiểm tra giúp tôi danh sách các cổ phiếu tôi đã mua không?",
+    "intent": "các mã cổ phiếu đã mua",
+    "intent_prediction": {
+      "name": "Giờ mở cửa, đóng cửa",
+      "confidence": 0.05405397713184357
+    }
+  },
+  {
+    "text": "Bạn có thể liệt kê các mã cổ phiếu mà tôi đang có?",
+    "intent": "các mã cổ phiếu đã mua",
+    "intent_prediction": {
+      "name": "biến động các cổ phiếu đã mua",
+      "confidence": 0.4020313620567322
+    }
+  },
+  {
+    "text": "Tôi muốn biết các mã cổ phiếu đã mua của tôi biến động như thế nào.",
+    "intent": "biến động các cổ phiếu đã mua",
+    "intent_prediction": {
+      "name": "các mã cổ phiếu đã mua",
+      "confidence": 0.31535986065864563
+    }
+  },
+  {
+    "text": "Sự biến động của các mã cổ phiếu đã mua?",
+    "intent": "biến động các cổ phiếu đã mua",
+    "intent_prediction": {
+      "name": "các mã cổ phiếu đã mua",
+      "confidence": 0.34247806668281555
+    }
+  },
+  {
+    "text": "Bán mất bao nhiêu?",
+    "intent": "phí bán",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.07979652285575867
+    }
+  },
+  {
+    "text": "Phí bao nhiêu?",
+    "intent": "phí bán",
+    "intent_prediction": {
+      "name": "số điện thoại",
+      "confidence": 0.07748810946941376
+    }
+  },
+  {
+    "text": "Vui lòng cho tôi biết tài khoản Messenger của người chăm sóc khách hàng.",
+    "intent": "messenger",
+    "intent_prediction": {
+      "name": "zalo",
+      "confidence": 0.07959295064210892
+    }
+  },
+  {
+    "text": "Tài khoản Messenger của người chăm sóc khách hàng là gì?",
+    "intent": "messenger",
+    "intent_prediction": {
+      "name": "số điện thoại",
+      "confidence": 0.12258714437484741
+    }
+  },
+  {
+    "text": "Làm sao để liên hệ với người môi giới qua Messenger?",
+    "intent": "messenger",
+    "intent_prediction": {
+      "name": "email",
+      "confidence": 0.11659799516201019
+    }
+  },
+  {
+    "text": "Chào bạn!",
+    "intent": "Chào",
+    "intent_prediction": {
+      "name": "Đặt lệnh mua cổ phiếu trong phiên",
+      "confidence": 0.14948314428329468
+    }
+  },
+  {
+    "text": "Xin chào chatbot, tôi cần biết thêm chi tiết về dịch vụ.",
+    "intent": "Chào",
+    "intent_prediction": {
+      "name": "giao dịch phái sinh",
+      "confidence": 0.06532090157270432
+    }
+  },
+  {
+    "text": "Hi!",
+    "intent": "Chào",
+    "intent_prediction": {
+      "name": "số điện thoại",
+      "confidence": 0.060691457241773605
+    }
+  },
+  {
+    "text": "Chào chatbot, tôi cần sự giúp đỡ của bạn trong việc tìm kiếm thông tin.",
+    "intent": "Chào",
+    "intent_prediction": {
+      "name": "Đặt lệnh mua cổ phiếu trong phiên",
+      "confidence": 0.30853819847106934
+    }
+  },
+  {
+    "text": "Tôi muốn số Zalo của người môi giới để hỏi thêm về cổ phiếu.",
+    "intent": "zalo",
+    "intent_prediction": {
+      "name": "hỏi tên đăng nhập",
+      "confidence": 0.0630718469619751
+    }
+  },
+  {
+    "text": "Zalo người tư vấn?",
+    "intent": "zalo",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.12587954103946686
+    }
+  },
+  {
+    "text": "Cần số Zalo để liên hệ với người môi giới.",
+    "intent": "zalo",
+    "intent_prediction": {
+      "name": "số điện thoại",
+      "confidence": 0.10790061205625534
+    }
+  },
+  {
+    "text": "Hôm qua thế nào?",
+    "intent": "lịch sử",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.1026134118437767
+    }
+  },
+  {
+    "text": "Thông tin thị trường chứng khoán hôm qua?",
+    "intent": "lịch sử",
+    "intent_prediction": {
+      "name": "Đặt lệnh mua cổ phiếu trong phiên",
+      "confidence": 0.12170620262622833
+    }
+  },
+  {
+    "text": "Bạn có thể cập nhật cho tôi về tình hình thị trường chứng khoán hôm nay được không?",
+    "intent": "lịch sử",
+    "intent_prediction": {
+      "name": "Giờ mở cửa, đóng cửa",
+      "confidence": 0.1294768750667572
+    }
+  },
+  {
+    "text": "Cần tài khoản Facebook để liên hệ với người môi giới.",
+    "intent": "facebook",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.10630200058221817
+    }
+  },
+  {
+    "text": "Xin tài khoản Facebook của người chăm sóc khách hàng.",
+    "intent": "facebook",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.06413225084543228
+    }
+  },
+  {
+    "text": "Vui lòng cung cấp tài khoản Facebook của người chăm sóc khách hàng cho tôi.",
+    "intent": "facebook",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.05096408724784851
+    }
+  },
+  {
+    "text": "Facebook người tư vấn?",
+    "intent": "facebook",
+    "intent_prediction": {
+      "name": "Giờ mở cửa, đóng cửa",
+      "confidence": 0.07134183496236801
+    }
+  },
+  {
+    "text": "Bạn giúp tôi đặt lệnh mua cổ phiếu MWG với giá thị trường trong phiên này nhé",
+    "intent": "Đặt lệnh mua cổ phiếu trong phiên",
+    "intent_prediction": {
+      "name": "biến động các cổ phiếu đã mua",
+      "confidence": 0.3106866180896759
+    }
+  },
+  {
+    "text": "Tôi cần biết phí giao dịch áp dụng cho các giao dịch cổ phiếu là bao nhiêu.",
+    "intent": "Phí giao dịch",
+    "intent_prediction": {
+      "name": "giao dịch phái sinh",
+      "confidence": 0.15210680663585663
+    }
+  },
+  {
+    "text": "Các khoản phí giao dịch là gì?",
+    "intent": "Phí giao dịch",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.10909076035022736
+    }
+  },
+  {
+    "text": "Các loại phí áp dụng khi giao dịch?",
+    "intent": "Phí giao dịch",
+    "intent_prediction": {
+      "name": "các mã cổ phiếu đã mua",
+      "confidence": 0.08455923944711685
+    }
+  },
+  {
+    "text": "Phí giao dịch khi mua bán cổ phiếu?",
+    "intent": "Phí giao dịch",
+    "intent_prediction": {
+      "name": "Đặt lệnh mua cổ phiếu trong phiên",
+      "confidence": 0.08154979348182678
+    }
+  },
+  {
+    "text": "Thuế bán bao nhiêu?",
+    "intent": "thuế bán",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.1288115680217743
+    }
+  },
+  {
+    "text": "Thuế bán cổ phiếu là bao nhiêu?",
+    "intent": "thuế bán",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.0791548639535904
+    }
+  },
+  {
+    "text": "Thuế bán là bao nhiêu?",
+    "intent": "thuế bán",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.10533596575260162
+    }
+  },
+  {
+    "text": "Có thể cho tôi email của người chăm sóc khách hàng để được tư vấn không?",
+    "intent": "email",
+    "intent_prediction": {
+      "name": "hỏi tên đăng nhập",
+      "confidence": 0.11197900772094727
+    }
+  },
+  {
+    "text": "Tôi muốn email của người môi giới để hỏi thêm về cổ phiếu.",
+    "intent": "email",
+    "intent_prediction": {
+      "name": "hỏi tên đăng nhập",
+      "confidence": 0.07212900370359421
+    }
+  },
+  {
+    "text": "Email?",
+    "intent": "email",
+    "intent_prediction": {
+      "name": "biến động các cổ phiếu đã mua",
+      "confidence": 0.12555205821990967
+    }
+  },
+  {
+    "text": "Kiểm tra số dư tài khoản giúp tôi.",
+    "intent": "số dư",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.0831027403473854
+    }
+  },
+  {
+    "text": "Số dư hiện tại trong tài khoản là bao nhiêu?",
+    "intent": "số dư",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.10440768301486969
+    }
+  },
+  {
+    "text": "Kiểm tra số dư giúp tôi.",
+    "intent": "số dư",
+    "intent_prediction": {
+      "name": "Đặt lệnh mua cổ phiếu trong phiên",
+      "confidence": 0.0678868219256401
+    }
+  },
+  {
+    "text": "Bạn có thể cho tôi biết lợi nhuận từ giao dịch phái sinh của tôi không?",
+    "intent": "giao dịch phái sinh",
+    "intent_prediction": {
+      "name": "Phí giao dịch",
+      "confidence": 0.11122969537973404
+    }
+  },
+  {
+    "text": "Lệnh bán 100 cổ phiếu VNM đã xử lý chưa?",
+    "intent": "check lệnh bán",
+    "intent_prediction": {
+      "name": "huỷ mua cổ phiếu",
+      "confidence": 0.17509795725345612
+    }
+  },
+  {
+    "text": "Bán Vinamilk xong chưa?",
+    "intent": "check lệnh bán",
+    "intent_prediction": {
+      "name": "biến động các cổ phiếu đã mua",
+      "confidence": 0.0812736451625824
+    }
+  },
+  {
+    "text": "Tôi muốn biết lệnh bán 100 cổ phiếu Masan Group của tôi đã hoàn tất chưa?",
+    "intent": "check lệnh bán",
+    "intent_prediction": {
+      "name": "các mã cổ phiếu đã mua",
+      "confidence": 0.14622269570827484
+    }
+  },
+  {
+    "text": "Bạn có thể kiểm tra giúp tôi xem lệnh bán 100 cổ phiếu FPT đã hoàn thành chưa?",
+    "intent": "check lệnh bán",
+    "intent_prediction": {
+      "name": "các mã cổ phiếu đã mua",
+      "confidence": 0.10967744141817093
+    }
+  },
+  {
+    "text": "Vui lòng cho tôi biết thời gian giao dịch của thị trường chứng khoán.",
+    "intent": "Giờ mở cửa, đóng cửa",
+    "intent_prediction": {
+      "name": "giao dịch phái sinh",
+      "confidence": 0.16048872470855713
+    }
+  },
+  {
+    "text": "Yêu cầu hủy lệnh bán.",
+    "intent": "huỷ bán cổ phiếu",
+    "intent_prediction": {
+      "name": "các mã cổ phiếu đã mua",
+      "confidence": 0.1430283784866333
+    }
+  },
+  {
+    "text": "Hủy lệnh.",
+    "intent": "huỷ bán cổ phiếu",
+    "intent_prediction": {
+      "name": "biến động các cổ phiếu đã mua",
+      "confidence": 0.09010598808526993
+    }
+  },
+  {
+    "text": "Hủy lệnh bán cổ phiếu này.",
+    "intent": "huỷ bán cổ phiếu",
+    "intent_prediction": {
+      "name": "biến động các cổ phiếu đã mua",
+      "confidence": 0.22347410023212433
+    }
+  },
+  {
+    "text": "Khi nào thì cổ phiếu FPT tôi vừa mua hôm qua sẽ được ghi nhận vào tài khoản?",
+    "intent": "cổ phiếu bao giờ về",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.08777592331171036
+    }
+  },
+  {
+    "text": "Khi nào cổ phiếu BID của tôi sẽ được ghi nhận vào tài khoản sau giao dịch bán?",
+    "intent": "cổ phiếu bao giờ về",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.13945221900939941
+    }
+  },
+  {
+    "text": "Khi nào cổ phiếu BID được ghi nhận vào tài khoản sau giao dịch?",
+    "intent": "cổ phiếu bao giờ về",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.20890985429286957
+    }
+  },
+  {
+    "text": "Cổ phiếu TCB hôm nay mua về tài khoản lúc nào?",
+    "intent": "cổ phiếu bao giờ về",
+    "intent_prediction": {
+      "name": "biến động các cổ phiếu đã mua",
+      "confidence": 0.0989890992641449
+    }
+  },
+  {
+    "text": "Cần số điện thoại để liên hệ với người môi giới.",
+    "intent": "số điện thoại",
+    "intent_prediction": {
+      "name": "Giờ mở cửa, đóng cửa",
+      "confidence": 0.18299688398838043
+    }
+  },
+  {
+    "text": "Số liên hệ chăm sóc khách hàng?",
+    "intent": "số điện thoại",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.09328288584947586
+    }
+  },
+  {
+    "text": "Bán 150 cổ phiếu BID",
+    "intent": "đặt lệnh bán",
+    "intent_prediction": {
+      "name": "Đặt lệnh mua cổ phiếu trong phiên",
+      "confidence": 0.1497560739517212
+    }
+  },
+  {
+    "text": "Bán 150 MWG",
+    "intent": "đặt lệnh bán",
+    "intent_prediction": {
+      "name": "Đặt lệnh mua cổ phiếu trong phiên",
+      "confidence": 0.12289292365312576
+    }
+  },
+  {
+    "text": "Tôi cần bán 500 cổ phiếu của HPG ngay bây giờ",
+    "intent": "đặt lệnh bán",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.05457040295004845
+    }
+  },
+  {
+    "text": "Bán 500 cổ phiếu HPG",
+    "intent": "đặt lệnh bán",
+    "intent_prediction": {
+      "name": "Đặt lệnh mua cổ phiếu trong phiên",
+      "confidence": 0.14054323732852936
+    }
+  },
+  {
+    "text": "Bán 50 cổ phiếu Vietcombank",
+    "intent": "đặt lệnh bán",
+    "intent_prediction": {
+      "name": "Đặt lệnh mua cổ phiếu trong phiên",
+      "confidence": 0.11917975544929504
+    }
+  },
+  {
+    "text": "Sự biến động của cổ phiếu làm cho cảm giác đầu tư trở nên tồi tệ.",
+    "intent": "Than",
+    "intent_prediction": {
+      "name": "các mã cổ phiếu đã mua",
+      "confidence": 0.14111359417438507
+    }
+  },
+  {
+    "text": "Thị trường chứng khoán đang làm mọi thứ trở nên khó khăn hơn.",
+    "intent": "Than",
+    "intent_prediction": {
+      "name": "biến động các cổ phiếu đã mua",
+      "confidence": 0.1827002316713333
+    }
+  },
+  {
+    "text": "Đầu tư vào chứng khoán gần đây không mang lại kết quả như kỳ vọng.",
+    "intent": "Than",
+    "intent_prediction": {
+      "name": "từ chối",
+      "confidence": 0.06911920756101608
+    }
+  },
+  {
+    "text": "Thực sự không thể chịu nổi với sự giảm giá không ngừng của cổ phiếu!",
+    "intent": "Than",
+    "intent_prediction": {
+      "name": "biến động các cổ phiếu đã mua",
+      "confidence": 0.11153028160333633
+    }
+  },
+  {
+    "text": "Bản tin thời sự?",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "Đặt lệnh mua cổ phiếu trong phiên",
+      "confidence": 0.09086526185274124
+    }
+  },
+  {
+    "text": "Bạn có thể giúp tôi tìm một công thức làm món ăn mới không?",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.15931227803230286
+    }
+  },
+  {
+    "text": "Bạn có thể giúp tôi tìm một lớp học về nhiếp ảnh không?",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.1399962306022644
+    }
+  },
+  {
+    "text": "Tôi cần tìm hiểu về các công ty cung cấp dịch vụ cloud computing.",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "các mã cổ phiếu đã mua",
+      "confidence": 0.17305080592632294
+    }
+  },
+  {
+    "text": "Kinh nghiệm làm việc?",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "các mã cổ phiếu đã mua",
+      "confidence": 0.09158158302307129
+    }
+  },
+  {
+    "text": "Tôi muốn biết về các hoạt động giải trí cuối tuần trong khu vực.",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "các mã cổ phiếu đã mua",
+      "confidence": 0.13346172869205475
+    }
+  },
+  {
+    "text": "Địa chỉ sửa chữa?",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "các mã cổ phiếu đã mua",
+      "confidence": 0.17664870619773865
+    }
+  },
+  {
+    "text": "Số điện thoại khách sạn?",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "số điện thoại",
+      "confidence": 0.11556341499090195
+    }
+  },
+  {
+    "text": "Bạn có thể giúp tôi tìm một khóa học trực tuyến hữu ích không?",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "tổng giá trị bán",
+      "confidence": 0.10108975321054459
+    }
+  },
+  {
+    "text": "Tôi cần biết cách sửa chữa điện thoại của mình.",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.13793016970157623
+    }
+  },
+  {
+    "text": "Khách sạn tốt nhất?",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.09312975406646729
+    }
+  },
+  {
+    "text": "Tôi cần tìm hiểu về các dịch vụ chăm sóc thú cưng.",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "thuế bán",
+      "confidence": 0.10779238492250443
+    }
+  },
+  {
+    "text": "Dịch vụ chăm sóc sức khỏe?",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.27972546219825745
+    }
+  },
+  {
+    "text": "Mẹo làm đẹp?",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.08740229904651642
+    }
+  },
+  {
+    "text": "Cập nhật phần mềm?",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.15799377858638763
+    }
+  },
+  {
+    "text": "Bạn có biết cách chuẩn bị cho một cuộc họp quan trọng không?",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.16016115248203278
+    }
+  },
+  {
+    "text": "Khuyến mãi đặc biệt?",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "các mã cổ phiếu đã mua",
+      "confidence": 0.0772293284535408
+    }
+  },
+  {
+    "text": "Tôi cần biết cách chuẩn bị cho một chuyến đi dài ngày.",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.22083169221878052
+    }
+  },
+  {
+    "text": "Tôi cần tìm hiểu về các phong trào xã hội hiện tại.",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "biến động các cổ phiếu đã mua",
+      "confidence": 0.09836525470018387
+    }
+  },
+  {
+    "text": "Dịch vụ sửa chữa nhà?",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "các mã cổ phiếu đã mua",
+      "confidence": 0.16915582120418549
+    }
+  },
+  {
+    "text": "Học bổng du học?",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "Đặt lệnh mua cổ phiếu trong phiên",
+      "confidence": 0.0698704794049263
+    }
+  },
+  {
+    "text": "Chăm sóc da mặt?",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.07041342556476593
+    }
+  },
+  {
+    "text": "Tôi muốn biết thời tiết hôm nay như thế nào?",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "các mã cổ phiếu đã mua",
+      "confidence": 0.12238440662622452
+    }
+  },
+  {
+    "text": "Cách tiết kiệm?",
+    "intent": "Không phân loại",
+    "intent_prediction": {
+      "name": "truy vấn đã bán được bao nhiêu cổ phiếu",
+      "confidence": 0.0914124846458435
+    }
+  }
+]

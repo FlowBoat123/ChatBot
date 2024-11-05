@@ -25,11 +25,16 @@ pipeline:
     min_ngram: 1
     max_ngram: 4
   - name: DIETClassifier
-    epochs: 100
+    epochs: 80
     intent_classification: True
     entity_recognition: True
     max_history: 5  # This increases the model's memory for recognizing the correct intent
     similarity_type: inner  # Change this to 'cosine' if inner doesn't work
+    ranking_length: 5
+    evaluate_on_number_of_examples: 500
+    evaluate_every_number_of_epochs: 5
+    tensorboard_log_directory: ".tensorboard"
+    tensorboard_log_level: "epoch"
 #     constrain_similarities: true
 #   - name: EntitySynonymMapper
 #   - name: ResponseSelector
@@ -67,3 +72,7 @@ policies: null
 #   - name: "EntitySynonymMapper"
 #   - name: "ResponseSelector"
 #   - name: "FallbackClassifier"pipeline:
+
+training:
+  tensorboard:
+    log_dir: ./logs

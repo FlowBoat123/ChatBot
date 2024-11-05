@@ -1,0 +1,12 @@
+recipe: default.v1
+assistant_id: 20240923-121251-independent-burrata
+
+language: "vi"
+pipeline:
+  - name: "WhitespaceTokenizer"  # Tokenizer dựa trên khoảng trắng
+  - name: "CRFEntityExtractor"  # Sử dụng CRF để nhận diện entities
+  - name: "CountVectorsFeaturizer"  # Tạo các đặc trưng vector từ văn bản
+  - name: "DIETClassifier"  # Sử dụng DIET cho phân loại intent
+    epochs: 20
+    intent_classification: True  # Phân loại intent
+    entity_recognition: True  # Nhận diện entities

@@ -234,7 +234,7 @@ nlu:
 
 - intent: Đặt lệnh mua cổ phiếu trong phiên
   examples: |
-    - ôi muốn đặt lệnh mua [100](amount) cổ phiếu của [công ty Vinamilk](stock_symbol) trong phiên [này](time)
+    - Tôi muốn đặt lệnh mua [100](amount) cổ phiếu của [công ty Vinamilk](stock_symbol) trong phiên [này](time)
     - Bạn có thể giúp tôi đặt lệnh mua [200](amount) cổ phiếu của [FPT](stock_symbol) ngay [bây giờ](time) được không?
     - Làm ơn đặt lệnh mua [50](amount) cổ phiếu của [Vietcombank](stock_symbol) trong phiên [hôm nay](time)
     - Tôi muốn mua [300](amount) cổ phiếu của [Vingroup](stock_symbol) trong phiên giao dịch [này](time), có thể thực hiện không?
@@ -846,7 +846,7 @@ nlu:
     - Hủy cổ phiếu.
     - Hủy ngay lập tức.
 
-- intent: lấy dữ liệu
-  examples: |
-    - Lấy dữ liệu từ mindsDB
-    - lấy dữ liệu
+# - intent: lấy dữ liệu
+#   examples: |
+#     - Lấy dữ liệu từ mindsDB
+#     - lấy dữ liệu

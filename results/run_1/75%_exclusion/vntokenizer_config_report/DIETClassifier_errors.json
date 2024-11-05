@@ -1,0 +1,204 @@
+[
+  {
+    "text": "Bạn có thể xác nhận giúp tôi thời gian cổ phiếu HPG sẽ về tài khoản sau khi bán không?",
+    "entities": [
+      {
+        "start": 48,
+        "end": 51,
+        "value": "HPG",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Bạn giúp tôi đặt lệnh mua cổ phiếu MWG với giá thị trường trong phiên này nhé",
+    "entities": [
+      {
+        "start": 35,
+        "end": 38,
+        "value": "MWG",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 70,
+        "end": 73,
+        "value": "này",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 35,
+        "end": 38,
+        "confidence_entity": 0.6464996933937073,
+        "value": "MWG",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi muốn mua 100 cổ phiếu của Masan Group trong phiên giao dịch đang diễn ra",
+    "entities": [
+      {
+        "start": 13,
+        "end": 16,
+        "value": "100",
+        "entity": "amount"
+      },
+      {
+        "start": 30,
+        "end": 41,
+        "value": "Masan Group",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 64,
+        "end": 76,
+        "value": "đang diễn ra",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 13,
+        "end": 16,
+        "confidence_entity": 0.9869183897972107,
+        "value": "100",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "stock_symbol",
+        "start": 30,
+        "end": 41,
+        "confidence_entity": 0.5149396061897278,
+        "value": "Masan Group",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Khi nào thì cổ phiếu FPT tôi vừa mua hôm qua sẽ được ghi nhận vào tài khoản?",
+    "entities": [
+      {
+        "start": 21,
+        "end": 24,
+        "value": "FPT",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 37,
+        "end": 44,
+        "value": "hôm qua",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 21,
+        "end": 24,
+        "confidence_entity": 0.9814134240150452,
+        "value": "FPT",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cổ phiếu TCB hôm nay mua về tài khoản lúc nào?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 12,
+        "value": "TCB",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 13,
+        "end": 20,
+        "value": "hôm nay",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 9,
+        "end": 12,
+        "confidence_entity": 0.8986839056015015,
+        "value": "TCB",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi cần bán 500 cổ phiếu của HPG ngay bây giờ",
+    "entities": [
+      {
+        "start": 12,
+        "end": 15,
+        "value": "500",
+        "entity": "amount"
+      },
+      {
+        "start": 29,
+        "end": 32,
+        "value": "HPG",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 38,
+        "end": 45,
+        "value": "bây giờ",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 12,
+        "end": 15,
+        "confidence_entity": 0.9867271780967712,
+        "value": "500",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "time",
+        "start": 38,
+        "end": 45,
+        "confidence_entity": 0.4914073348045349,
+        "value": "bây giờ",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bán 500 cổ phiếu HPG",
+    "entities": [
+      {
+        "start": 4,
+        "end": 7,
+        "value": "500",
+        "entity": "amount"
+      },
+      {
+        "start": 17,
+        "end": 20,
+        "value": "HPG",
+        "entity": "stock_symbol"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 4,
+        "end": 7,
+        "confidence_entity": 0.988189697265625,
+        "value": "500",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

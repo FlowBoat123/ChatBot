@@ -1,0 +1,24 @@
+recipe: default.v1
+assistant_id: 20240923-121251-independent-burrata
+
+language: "vi"
+pipeline:
+  - name: "WhitespaceTokenizer"
+    # Flag to check whether to split intents
+    "intent_tokenization_flag": False
+    # Regular expression to detect tokens
+    "token_pattern": None
+  - name: "LanguageModelFeaturizer"
+    model_name: "bert"  # Có thể sử dụng "bert" cho mô hình khác
+    model_weights: "rasa/LaBSE"  # Mô hình LaBSE cho tiếng Việt
+    cache_dir: null
+
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+
+  - name: "DIETClassifier"  # Sử dụng DIET cho phân loại intent
+    epochs: 20
+    intent_classification: True  # Phân loại intent
+    entity_recognition: True  # Nhận diện entities

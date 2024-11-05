@@ -1,0 +1,154 @@
+[
+  {
+    "text": "Cập nhật thị trường chứng khoán hôm nay thế nào?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 32,
+        "end": 39,
+        "confidence_entity": 0.7360050678253174,
+        "value": "hôm nay",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn có thể cập nhật cho tôi về tình hình thị trường chứng khoán hôm nay được không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 64,
+        "end": 71,
+        "confidence_entity": 0.7123692035675049,
+        "value": "hôm nay",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn giúp tôi đặt lệnh mua cổ phiếu MWG với giá thị trường trong phiên này nhé",
+    "entities": [
+      {
+        "start": 35,
+        "end": 38,
+        "value": "MWG",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 70,
+        "end": 73,
+        "value": "này",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 35,
+        "end": 38,
+        "confidence_entity": 0.9766291975975037,
+        "value": "MWG",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Giờ mở hôm nay?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 7,
+        "end": 14,
+        "confidence_entity": 0.7327052354812622,
+        "value": "hôm nay",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Thị trường chứng khoán hôm nay mở cửa mấy giờ?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 23,
+        "end": 30,
+        "confidence_entity": 0.7163943648338318,
+        "value": "hôm nay",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hủy lệnh bán cổ phiếu này ngay bây giờ.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 31,
+        "end": 38,
+        "confidence_entity": 0.8960389494895935,
+        "value": "bây giờ",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hủy giao dịch mua ngay bây giờ.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 23,
+        "end": 30,
+        "confidence_entity": 0.8908687233924866,
+        "value": "bây giờ",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bạn giúp tôi bán 150 cổ phiếu của MWG với giá hiện tại",
+    "entities": [
+      {
+        "start": 17,
+        "end": 20,
+        "value": "150",
+        "entity": "amount"
+      },
+      {
+        "start": 34,
+        "end": 37,
+        "value": "MWG",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 46,
+        "end": 54,
+        "value": "hiện tại",
+        "entity": "price"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 17,
+        "end": 20,
+        "confidence_entity": 0.9848960041999817,
+        "value": "150",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "stock_symbol",
+        "start": 34,
+        "end": 37,
+        "confidence_entity": 0.9828906059265137,
+        "value": "MWG",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

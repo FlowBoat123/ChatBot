@@ -1,0 +1,309 @@
+{
+  "Chào": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 4,
+    "confused_with": {
+      "huỷ mua cổ phiếu": 1,
+      "Không phân loại": 1,
+      "truy vấn đã bán được bao nhiêu cổ phiếu": 1
+    }
+  },
+  "Không phân loại": {
+    "precision": 0.6129032258064516,
+    "recall": 0.7307692307692307,
+    "f1-score": 0.6666666666666667,
+    "support": 26,
+    "confused_with": {
+      "số điện thoại": 4,
+      "truy vấn đã bán được bao nhiêu cổ phiếu": 1
+    }
+  },
+  "Đặt lệnh mua cổ phiếu trong phiên": {
+    "precision": 1.0,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.8,
+    "support": 3,
+    "confused_with": {
+      "các mã cổ phiếu đã mua": 1
+    }
+  },
+  "không rõ": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "Không phân loại": 2
+    }
+  },
+  "check lệnh bán": {
+    "precision": 0.2,
+    "recall": 0.25,
+    "f1-score": 0.22222222222222224,
+    "support": 4,
+    "confused_with": {
+      "biến động các cổ phiếu đã mua": 2,
+      "truy vấn đã bán được bao nhiêu cổ phiếu": 1
+    }
+  },
+  "OTP": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "hỏi tên đăng nhập": 2,
+      "check lệnh bán": 1
+    }
+  },
+  "các mã cổ phiếu đã mua": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "biến động các cổ phiếu đã mua": 2,
+      "truy vấn đã bán được bao nhiêu cổ phiếu": 1
+    }
+  },
+  "thuế bán": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "check lệnh bán": 2,
+      "truy vấn đã bán được bao nhiêu cổ phiếu": 1
+    }
+  },
+  "huỷ mua cổ phiếu": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1-score": 0.6666666666666666,
+    "support": 4,
+    "confused_with": {}
+  },
+  "cổ phiếu bao giờ về": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 4,
+    "confused_with": {
+      "truy vấn đã bán được bao nhiêu cổ phiếu": 4
+    }
+  },
+  "hỏi tên đăng nhập": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "Không phân loại": 1
+    }
+  },
+  "số điện thoại": {
+    "precision": 0.2222222222222222,
+    "recall": 0.5,
+    "f1-score": 0.30769230769230765,
+    "support": 4,
+    "confused_with": {
+      "số dư": 2
+    }
+  },
+  "truy vấn đã bán được bao nhiêu cổ phiếu": {
+    "precision": 0.07407407407407407,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.13333333333333333,
+    "support": 3,
+    "confused_with": {
+      "cổ phiếu bao giờ về": 1
+    }
+  },
+  "lịch sử": {
+    "precision": 0.3333333333333333,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.3333333333333333,
+    "support": 3,
+    "confused_with": {
+      "Không phân loại": 2
+    }
+  },
+  "Đồng ý": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "Không phân loại": 1,
+      "truy vấn đã bán được bao nhiêu cổ phiếu": 1
+    }
+  },
+  "phí bán": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "huỷ bán cổ phiếu": 1,
+      "truy vấn đã bán được bao nhiêu cổ phiếu": 1,
+      "check lệnh bán": 1
+    }
+  },
+  "zalo": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "số điện thoại": 2,
+      "OTP": 1
+    }
+  },
+  "đặt lệnh bán": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 5,
+    "confused_with": {
+      "các mã cổ phiếu đã mua": 3,
+      "truy vấn đã bán được bao nhiêu cổ phiếu": 1,
+      "biến động các cổ phiếu đã mua": 1
+    }
+  },
+  "messenger": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "truy vấn đã bán được bao nhiêu cổ phiếu": 3
+    }
+  },
+  "facebook": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 4,
+    "confused_with": {
+      "truy vấn đã bán được bao nhiêu cổ phiếu": 2,
+      "lịch sử": 2
+    }
+  },
+  "email": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 4,
+    "confused_with": {
+      "Không phân loại": 2,
+      "Giờ mở cửa, đóng cửa": 1,
+      "số điện thoại": 1
+    }
+  },
+  "Giờ mở cửa, đóng cửa": {
+    "precision": 0.5,
+    "recall": 0.25,
+    "f1-score": 0.3333333333333333,
+    "support": 4,
+    "confused_with": {
+      "huỷ mua cổ phiếu": 1,
+      "truy vấn đã bán được bao nhiêu cổ phiếu": 1
+    }
+  },
+  "tổng giá trị bán": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "Không phân loại": 1,
+      "các mã cổ phiếu đã mua": 1
+    }
+  },
+  "huỷ bán cổ phiếu": {
+    "precision": 0.3333333333333333,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.3333333333333333,
+    "support": 3,
+    "confused_with": {
+      "huỷ mua cổ phiếu": 2
+    }
+  },
+  "Than": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 4,
+    "confused_with": {
+      "số dư": 2,
+      "Không phân loại": 1,
+      "cổ phiếu bao giờ về": 1
+    }
+  },
+  "Phí giao dịch": {
+    "precision": 1.0,
+    "recall": 0.25,
+    "f1-score": 0.4,
+    "support": 4,
+    "confused_with": {
+      "huỷ bán cổ phiếu": 1,
+      "truy vấn đã bán được bao nhiêu cổ phiếu": 1
+    }
+  },
+  "số dư": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "truy vấn đã bán được bao nhiêu cổ phiếu": 2,
+      "Không phân loại": 1
+    }
+  },
+  "giao dịch phái sinh": {
+    "precision": 1.0,
+    "recall": 0.25,
+    "f1-score": 0.4,
+    "support": 4,
+    "confused_with": {
+      "truy vấn đã bán được bao nhiêu cổ phiếu": 3
+    }
+  },
+  "biến động các cổ phiếu đã mua": {
+    "precision": 0.3333333333333333,
+    "recall": 1.0,
+    "f1-score": 0.5,
+    "support": 3,
+    "confused_with": {}
+  },
+  "từ chối": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "truy vấn đã bán được bao nhiêu cổ phiếu": 1
+    }
+  },
+  "accuracy": 0.31932773109243695,
+  "macro avg": {
+    "precision": 0.2036399840700916,
+    "recall": 0.2076923076923077,
+    "f1-score": 0.1698860398860399,
+    "support": 119
+  },
+  "weighted avg": {
+    "precision": 0.30123189060570466,
+    "recall": 0.31932773109243695,
+    "f1-score": 0.27691589456295346,
+    "support": 119
+  },
+  "micro avg": {
+    "precision": 0.31932773109243695,
+    "recall": 0.31932773109243695,
+    "f1-score": 0.31932773109243695,
+    "support": 119
+  }
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "text": "Bạn có thể cập nhật cho tôi về tình hình thị trường chứng khoán hôm nay được không?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 64,
+        "end": 71,
+        "confidence_entity": 0.7269397974014282,
+        "value": "hôm nay",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi muốn mua 100 cổ phiếu của Masan Group trong phiên giao dịch đang diễn ra",
+    "entities": [
+      {
+        "start": 13,
+        "end": 16,
+        "value": "100",
+        "entity": "amount"
+      },
+      {
+        "start": 30,
+        "end": 41,
+        "value": "Masan Group",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 64,
+        "end": 76,
+        "value": "đang diễn ra",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 13,
+        "end": 16,
+        "confidence_entity": 0.9951655864715576,
+        "value": "100",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "stock_symbol",
+        "start": 30,
+        "end": 41,
+        "confidence_entity": 0.9958184957504272,
+        "value": "Masan Group",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Khi nào thì cổ phiếu FPT tôi vừa mua hôm qua sẽ được ghi nhận vào tài khoản?",
+    "entities": [
+      {
+        "start": 21,
+        "end": 24,
+        "value": "FPT",
+        "entity": "stock_symbol"
+      },
+      {
+        "start": 37,
+        "end": 44,
+        "value": "hôm qua",
+        "entity": "time"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "stock_symbol",
+        "start": 21,
+        "end": 24,
+        "confidence_entity": 0.9951343536376953,
+        "value": "FPT",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi muốn biết thời tiết hôm nay như thế nào?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "time",
+        "start": 24,
+        "end": 31,
+        "confidence_entity": 0.7247599363327026,
+        "value": "hôm nay",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]
